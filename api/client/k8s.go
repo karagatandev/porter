@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 
 	v1 "k8s.io/api/batch/v1"
 )

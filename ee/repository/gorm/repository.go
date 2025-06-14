@@ -4,7 +4,7 @@
 package gorm
 
 import (
-	"github.com/porter-dev/porter/ee/repository"
+	"github.com/karagatandev/porter/ee/repository"
 	"gorm.io/gorm"
 )
 

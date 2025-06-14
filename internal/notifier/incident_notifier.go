@@ -1,6 +1,6 @@
 package notifier
 
-import "github.com/porter-dev/porter/api/types"
+import "github.com/karagatandev/porter/api/types"
 
 type IncidentNotifier interface {
 	NotifyNew(incident *types.Incident, url string) error

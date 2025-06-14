@@ -9,8 +9,8 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/encryption"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/encryption"
 )
 
 // Infra represents the metadata for an infrastructure type provisioned on

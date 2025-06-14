@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/porter-dev/porter/api/server/handlers/user"
-	"github.com/porter-dev/porter/api/server/shared/apitest"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/server/handlers/user"
+	"github.com/karagatandev/porter/api/server/shared/apitest"
+	"github.com/karagatandev/porter/api/types"
 	"github.com/stretchr/testify/assert"
 )
 

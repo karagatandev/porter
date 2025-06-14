@@ -10,9 +10,9 @@ import (
 	"strings"
 
 	"github.com/aws/aws-sdk-go/aws/arn"
-	"github.com/porter-dev/porter/internal/kubernetes"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/repository"
 	"github.com/stefanmcshane/helm/pkg/postrender"
 	"golang.org/x/oauth2"
 	"gopkg.in/yaml.v2"

@@ -3,8 +3,8 @@ package environment_groups
 import (
 	"context"
 
-	"github.com/porter-dev/porter/internal/kubernetes"
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/internal/telemetry"
 )
 
 // LatestBaseEnvironmentGroup returns the most recent version of an environment group stored in the porter-env-group namespace.

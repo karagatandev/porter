@@ -3,7 +3,7 @@ package analytics
 import (
 	"fmt"
 
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/models"
 	segment "gopkg.in/segmentio/analytics-go.v3"
 )
 

@@ -2,14 +2,14 @@ package router
 
 import (
 	"github.com/go-chi/chi/v5"
-	"github.com/porter-dev/porter/api/server/router/middleware"
-	"github.com/porter-dev/porter/provisioner/server/authn"
-	"github.com/porter-dev/porter/provisioner/server/authz"
-	"github.com/porter-dev/porter/provisioner/server/config"
-	"github.com/porter-dev/porter/provisioner/server/handlers/credentials"
-	"github.com/porter-dev/porter/provisioner/server/handlers/healthcheck"
-	"github.com/porter-dev/porter/provisioner/server/handlers/provision"
-	"github.com/porter-dev/porter/provisioner/server/handlers/state"
+	"github.com/karagatandev/porter/api/server/router/middleware"
+	"github.com/karagatandev/porter/provisioner/server/authn"
+	"github.com/karagatandev/porter/provisioner/server/authz"
+	"github.com/karagatandev/porter/provisioner/server/config"
+	"github.com/karagatandev/porter/provisioner/server/handlers/credentials"
+	"github.com/karagatandev/porter/provisioner/server/handlers/healthcheck"
+	"github.com/karagatandev/porter/provisioner/server/handlers/provision"
+	"github.com/karagatandev/porter/provisioner/server/handlers/state"
 )
 
 func NewAPIRouter(config *config.Config) *chi.Mux {

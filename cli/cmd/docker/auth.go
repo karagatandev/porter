@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/types"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/types"
 	"k8s.io/client-go/util/homedir"
 )
 

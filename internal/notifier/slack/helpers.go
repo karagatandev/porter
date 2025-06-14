@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/porter-dev/porter/internal/notifier"
+	"github.com/karagatandev/porter/internal/notifier"
 )
 
 func getSlackBlocks(opts *notifier.NotifyOpts) ([]*SlackBlock, []*SlackBlock) {

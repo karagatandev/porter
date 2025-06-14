@@ -3,9 +3,9 @@ package infra
 import (
 	"encoding/json"
 
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/templater"
-	"github.com/porter-dev/porter/internal/templater/utils"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/templater"
+	"github.com/karagatandev/porter/internal/templater/utils"
 )
 
 // OperationReader implements the templater.TemplateReader for reading from

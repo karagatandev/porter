@@ -9,11 +9,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/cli/cmd/docker"
-	"github.com/porter-dev/porter/cli/cmd/github"
-	"github.com/porter-dev/porter/internal/templater/utils"
+	"github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/cli/cmd/docker"
+	"github.com/karagatandev/porter/cli/cmd/github"
+	"github.com/karagatandev/porter/internal/templater/utils"
 	"k8s.io/client-go/util/homedir"
 )
 

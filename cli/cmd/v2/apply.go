@@ -14,16 +14,16 @@ import (
 	"time"
 
 	"github.com/fatih/color"
-	app_api "github.com/porter-dev/porter/api/server/handlers/porter_app"
-	v2 "github.com/porter-dev/porter/internal/porter_app/v2"
+	app_api "github.com/karagatandev/porter/api/server/handlers/porter_app"
+	v2 "github.com/karagatandev/porter/internal/porter_app/v2"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/models"
 
 	"github.com/cli/cli/git"
 
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/cli/cmd/config"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/cli/cmd/config"
 )
 
 // ApplyInput is the input for the Apply function

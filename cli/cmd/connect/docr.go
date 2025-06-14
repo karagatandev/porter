@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/cli/cmd/utils"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/cli/cmd/utils"
 )
 
 // DOCR creates a DOCR integration

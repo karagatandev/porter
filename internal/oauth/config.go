@@ -6,8 +6,8 @@ import (
 	"encoding/base64"
 	"time"
 
-	"github.com/porter-dev/porter/internal/models/integrations"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/internal/repository"
 
 	"golang.org/x/oauth2"
 )

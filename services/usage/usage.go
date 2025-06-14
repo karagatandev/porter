@@ -8,19 +8,19 @@ import (
 	"sync"
 	"time"
 
-	"github.com/porter-dev/porter/api/server/shared/config/env"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/ee/integrations/vault"
-	"github.com/porter-dev/porter/internal/adapter"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/oauth"
-	"github.com/porter-dev/porter/internal/repository"
-	"github.com/porter-dev/porter/internal/usage"
+	"github.com/karagatandev/porter/api/server/shared/config/env"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/ee/integrations/vault"
+	"github.com/karagatandev/porter/internal/adapter"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/oauth"
+	"github.com/karagatandev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/usage"
 	"golang.org/x/oauth2"
 	"gorm.io/gorm"
 
-	"github.com/porter-dev/porter/internal/repository/credentials"
-	rgorm "github.com/porter-dev/porter/internal/repository/gorm"
+	"github.com/karagatandev/porter/internal/repository/credentials"
+	rgorm "github.com/karagatandev/porter/internal/repository/gorm"
 )
 
 type UsageTracker struct {

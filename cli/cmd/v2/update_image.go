@@ -6,7 +6,7 @@ import (
 
 	"github.com/fatih/color"
 
-	api "github.com/porter-dev/porter/api/client"
+	api "github.com/karagatandev/porter/api/client"
 )
 
 // UpdateImageInput is the input for the UpdateImage function

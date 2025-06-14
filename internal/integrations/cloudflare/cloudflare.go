@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/cloudflare/cloudflare-go"
-	"github.com/porter-dev/porter/internal/integrations/dns"
+	"github.com/karagatandev/porter/internal/integrations/dns"
 )
 
 // RecordType strongly types cloudflare dns entry types

@@ -3,7 +3,7 @@ package gorm_test
 import (
 	"testing"
 
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 func TestCreateNewTag(t *testing.T) {

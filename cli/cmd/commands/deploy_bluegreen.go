@@ -6,13 +6,13 @@ import (
 	"os"
 	"time"
 
-	"github.com/porter-dev/porter/cli/cmd/config"
-	v2 "github.com/porter-dev/porter/cli/cmd/v2"
+	"github.com/karagatandev/porter/cli/cmd/config"
+	v2 "github.com/karagatandev/porter/cli/cmd/v2"
 
 	"github.com/fatih/color"
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/cli/cmd/deploy"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/cli/cmd/deploy"
 	"github.com/spf13/cobra"
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

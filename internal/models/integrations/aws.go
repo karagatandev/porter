@@ -11,7 +11,7 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 	"sigs.k8s.io/aws-iam-authenticator/pkg/token"
 )
 

@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 
 	"github.com/fatih/color"
-	"github.com/porter-dev/porter/cli/cmd/config"
-	"github.com/porter-dev/porter/cli/cmd/docker"
-	"github.com/porter-dev/porter/cli/cmd/github"
-	"github.com/porter-dev/porter/cli/cmd/utils"
+	"github.com/karagatandev/porter/cli/cmd/config"
+	"github.com/karagatandev/porter/cli/cmd/docker"
+	"github.com/karagatandev/porter/cli/cmd/github"
+	"github.com/karagatandev/porter/cli/cmd/utils"
 
 	"github.com/spf13/cobra"
 )

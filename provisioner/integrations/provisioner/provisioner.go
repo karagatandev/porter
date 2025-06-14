@@ -1,7 +1,7 @@
 package provisioner
 
 import (
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 type ProvisionerOperation string

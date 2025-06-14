@@ -1,4 +1,4 @@
-module github.com/porter-dev/porter/services/cli_install_script_container
+module github.com/karagatandev/porter/services/cli_install_script_container
 
 go 1.19
 

@@ -1,8 +1,8 @@
 package models
 
 import (
+	"github.com/karagatandev/porter/api/types"
 	"github.com/lithammer/shortuuid/v4"
-	"github.com/porter-dev/porter/api/types"
 	"gorm.io/gorm"
 )
 

@@ -3,8 +3,8 @@ package envgroup
 import (
 	"errors"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/kubernetes"
 	v1 "k8s.io/api/core/v1"
 )
 

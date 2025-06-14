@@ -3,8 +3,8 @@ package authn
 import (
 	"net/http"
 
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 func SaveUserAuthenticated(

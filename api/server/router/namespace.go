@@ -5,12 +5,12 @@ import (
 
 	"github.com/go-chi/chi/v5"
 
-	"github.com/porter-dev/porter/api/server/handlers/job"
-	"github.com/porter-dev/porter/api/server/handlers/namespace"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/server/shared/router"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/server/handlers/job"
+	"github.com/karagatandev/porter/api/server/handlers/namespace"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/server/shared/router"
+	"github.com/karagatandev/porter/api/types"
 )
 
 func NewNamespaceScopedRegisterer(children ...*router.Registerer) *router.Registerer {

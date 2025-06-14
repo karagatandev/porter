@@ -4,9 +4,9 @@ import (
 	"context"
 
 	"connectrpc.com/connect"
+	"github.com/karagatandev/porter/internal/telemetry"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 	"github.com/porter-dev/api-contracts/generated/go/porter/v1/porterv1connect"
-	"github.com/porter-dev/porter/internal/telemetry"
 )
 
 // DeploymentTargetDetailsInput is the input to the DeploymentTargetDetails function

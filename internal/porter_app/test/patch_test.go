@@ -6,10 +6,10 @@ import (
 	"os"
 	"testing"
 
+	v2 "github.com/karagatandev/porter/internal/porter_app/v2"
 	"github.com/matryer/is"
 	"github.com/porter-dev/api-contracts/generated/go/helpers"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
-	v2 "github.com/porter-dev/porter/internal/porter_app/v2"
 )
 
 func TestPatchApp(t *testing.T) {

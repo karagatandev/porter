@@ -6,14 +6,14 @@ import (
 	"time"
 
 	"github.com/joeshaw/envdecode"
-	"github.com/porter-dev/porter/api/server/shared/config/env"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/adapter"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/api/server/shared/config/env"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/adapter"
+	"github.com/karagatandev/porter/internal/models"
 	"golang.org/x/crypto/bcrypt"
 
-	rcreds "github.com/porter-dev/porter/internal/repository/credentials"
-	pgorm "github.com/porter-dev/porter/internal/repository/gorm"
+	rcreds "github.com/karagatandev/porter/internal/repository/credentials"
+	pgorm "github.com/karagatandev/porter/internal/repository/gorm"
 )
 
 type EnvConf struct {

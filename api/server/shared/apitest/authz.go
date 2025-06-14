@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/porter-dev/porter/api/server/authz"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/api/server/authz"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 func WithProject(t *testing.T, req *http.Request, proj *models.Project) *http.Request {

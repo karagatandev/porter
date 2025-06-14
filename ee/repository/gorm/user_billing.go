@@ -4,9 +4,9 @@
 package gorm
 
 import (
-	"github.com/porter-dev/porter/ee/models"
-	"github.com/porter-dev/porter/ee/repository"
-	"github.com/porter-dev/porter/internal/encryption"
+	"github.com/karagatandev/porter/ee/models"
+	"github.com/karagatandev/porter/ee/repository"
+	"github.com/karagatandev/porter/internal/encryption"
 	"gorm.io/gorm"
 )
 

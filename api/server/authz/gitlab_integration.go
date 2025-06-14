@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/porter-dev/porter/api/server/shared/apierrors"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/models"
-	ints "github.com/porter-dev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/api/server/shared/apierrors"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/models"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
 	"gorm.io/gorm"
 )
 

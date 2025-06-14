@@ -3,10 +3,10 @@ package populate_source_config_display_name_test
 import (
 	"testing"
 
-	"github.com/porter-dev/porter/cmd/migrate/populate_source_config_display_name"
+	"github.com/karagatandev/porter/cmd/migrate/populate_source_config_display_name"
 
-	"github.com/porter-dev/porter/internal/models"
-	lr "github.com/porter-dev/porter/pkg/logger"
+	"github.com/karagatandev/porter/internal/models"
+	lr "github.com/karagatandev/porter/pkg/logger"
 )
 
 func TestAllSourceConfigsArePopulated(t *testing.T) {

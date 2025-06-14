@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/go-test/deep"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 func TestListUsersByIDs(t *testing.T) {

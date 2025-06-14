@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 // AppInstanceRepository represents the set of queries on the AppInstance model

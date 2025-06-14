@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 // WriteUser is the function type for all User write operations

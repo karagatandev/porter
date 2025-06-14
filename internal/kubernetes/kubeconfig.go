@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net/url"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/models"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/tools/clientcmd/api"
 )

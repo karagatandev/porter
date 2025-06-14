@@ -5,9 +5,9 @@ import (
 	"fmt"
 
 	"github.com/docker/docker-credential-helpers/credentials"
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/cli/cmd/config"
-	"github.com/porter-dev/porter/cli/cmd/docker"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/cli/cmd/config"
+	"github.com/karagatandev/porter/cli/cmd/docker"
 )
 
 // PorterHelper implements credentials.Helper: it acts as a credentials

@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/models/integrations"
 )
 
 type IncidentNotifier struct {

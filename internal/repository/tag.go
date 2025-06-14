@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/porter-dev/porter/internal/models"
+import "github.com/karagatandev/porter/internal/models"
 
 // GitRepoRepository represents the set of queries on the
 // GitRepo model

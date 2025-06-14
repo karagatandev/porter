@@ -1,8 +1,8 @@
 package test
 
 import (
-	ints "github.com/porter-dev/porter/internal/models/integrations"
-	"github.com/porter-dev/porter/internal/repository"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/internal/repository"
 )
 
 type SlackIntegrationRepository struct{}

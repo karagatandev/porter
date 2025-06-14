@@ -3,7 +3,7 @@ package integrations
 import (
 	"gorm.io/gorm"
 
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // AzureIntegration is an auth mechanism that uses a Azure service account principal to

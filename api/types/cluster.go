@@ -134,35 +134,35 @@ type ClusterResolverInfo struct {
 // performed in order to initialize a cluster
 var ClusterResolverInfos = map[ClusterResolverName]ClusterResolverInfo{
 	ClusterCAData: {
-		Docs:   "https://github.com/porter-dev/porter",
+		Docs:   "https://github.com/karagatandev/porter",
 		Fields: "cluster_ca_data",
 	},
 	ClusterLocalhost: {
-		Docs:   "https://github.com/porter-dev/porter",
+		Docs:   "https://github.com/karagatandev/porter",
 		Fields: "cluster_hostname",
 	},
 	ClientCertData: {
-		Docs:   "https://github.com/porter-dev/porter",
+		Docs:   "https://github.com/karagatandev/porter",
 		Fields: "client_cert_data",
 	},
 	ClientKeyData: {
-		Docs:   "https://github.com/porter-dev/porter",
+		Docs:   "https://github.com/karagatandev/porter",
 		Fields: "client_key_data",
 	},
 	OIDCIssuerData: {
-		Docs:   "https://github.com/porter-dev/porter",
+		Docs:   "https://github.com/karagatandev/porter",
 		Fields: "oidc_idp_issuer_ca_data",
 	},
 	TokenData: {
-		Docs:   "https://github.com/porter-dev/porter",
+		Docs:   "https://github.com/karagatandev/porter",
 		Fields: "token_data",
 	},
 	GCPKeyData: {
-		Docs:   "https://github.com/porter-dev/porter",
+		Docs:   "https://github.com/karagatandev/porter",
 		Fields: "gcp_key_data",
 	},
 	AWSData: {
-		Docs:   "https://github.com/porter-dev/porter",
+		Docs:   "https://github.com/karagatandev/porter",
 		Fields: "aws_access_key_id,aws_secret_access_key,aws_cluster_id",
 	},
 }

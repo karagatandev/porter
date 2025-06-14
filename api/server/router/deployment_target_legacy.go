@@ -4,11 +4,11 @@ import (
 	"fmt"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/porter-dev/porter/api/server/handlers/deployment_target"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/server/shared/router"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/server/handlers/deployment_target"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/server/shared/router"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // NewLegacyDeploymentTargetScopedRegisterer applies /api/projects/{project_id}/clusters/{cluster_id}/deployment-targets routes to the gin Router

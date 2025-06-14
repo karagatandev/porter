@@ -3,7 +3,7 @@ package healthcheck
 import (
 	"net/http"
 
-	"github.com/porter-dev/porter/provisioner/server/config"
+	"github.com/karagatandev/porter/provisioner/server/config"
 )
 
 type LivezHandler struct {

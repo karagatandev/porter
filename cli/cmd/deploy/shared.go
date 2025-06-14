@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/types"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // SharedOpts are common options for build, create, and deploy agents

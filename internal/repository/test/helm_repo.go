@@ -3,9 +3,9 @@ package test
 import (
 	"errors"
 
-	"github.com/porter-dev/porter/internal/models"
-	ints "github.com/porter-dev/porter/internal/models/integrations"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/models"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/internal/repository"
 	"gorm.io/gorm"
 )
 

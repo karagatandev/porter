@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
+	apiTypes "github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/integrations/preview"
 	"github.com/mitchellh/mapstructure"
-	apiTypes "github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/integrations/preview"
 	"github.com/porter-dev/switchboard/pkg/types"
 )
 

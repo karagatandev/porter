@@ -6,7 +6,7 @@ Run the following command to grab the latest binary:
 {
 name=$(curl -s https://api.github.com/repos/porter-dev/porter/releases/latest | grep "browser_download_url.*/porter_.*_Darwin_x86_64\.zip" | cut -d ":" -f 2,3 | tr -d \")
 name=$(basename $name)
-curl -L https://github.com/porter-dev/porter/releases/latest/download/$name --output $name
+curl -L https://github.com/karagatandev/porter/releases/latest/download/$name --output $name
 unzip -a $name
 rm $name
 }
@@ -26,7 +26,7 @@ To download a specific version of the CLI:
 # NOTE: replace this line with the version
 version=v0.6.1
 name=porter-$version.zip
-curl -L https://github.com/porter-dev/porter/releases/download/${version}/porter_${version}_Darwin_x86_64.zip --output $name
+curl -L https://github.com/karagatandev/porter/releases/download/${version}/porter_${version}_Darwin_x86_64.zip --output $name
 unzip -a $name
 rm $name
 chmod +x ./porter
@@ -42,7 +42,7 @@ Run the following command to grab the latest binary:
 {
 name=$(curl -s https://api.github.com/repos/porter-dev/porter/releases/latest | grep "browser_download_url.*/porter_.*_Linux_x86_64\.zip" | cut -d ":" -f 2,3 | tr -d \")
 name=$(basename $name)
-curl -L https://github.com/porter-dev/porter/releases/latest/download/$name --output $name
+curl -L https://github.com/karagatandev/porter/releases/latest/download/$name --output $name
 unzip -a $name
 rm $name
 }
@@ -63,7 +63,7 @@ To download a specific version of the CLI:
 # NOTE: replace this line with the version
 version=v0.6.1
 name=porter-$version.zip
-curl -L https://github.com/porter-dev/porter/releases/download/${version}/porter_${version}_Linux_x86_64.zip --output $name
+curl -L https://github.com/karagatandev/porter/releases/download/${version}/porter_${version}_Linux_x86_64.zip --output $name
 unzip -a $name
 rm $name
 chmod +x ./porter
@@ -73,7 +73,7 @@ sudo mv ./porter /usr/local/bin/porter
 
 ## Windows
 
-Go [here](https://github.com/porter-dev/porter/releases/latest/download/porter_0.1.0-beta.1_Windows_x86_64.zip) to download the Windows executable and add the binary to your `PATH`.
+Go [here](https://github.com/karagatandev/porter/releases/latest/download/porter_0.1.0-beta.1_Windows_x86_64.zip) to download the Windows executable and add the binary to your `PATH`.
 
 # Connecting to an existing cluster
 ### `porter connect kubeconfig`
@@ -99,7 +99,7 @@ docker push gcr.io/project-123456/porter-server:latest
 
 > 📘
 >
-> We are working to add support for additional private Docker registries. If you don't see your registry provider, send us an email at [contact@getporter.dev](mailto:contact@getporter.dev) or feel free to contribute to the [repo](https://github.com/porter-dev/porter).
+> We are working to add support for additional private Docker registries. If you don't see your registry provider, send us an email at [contact@getporter.dev](mailto:contact@getporter.dev) or feel free to contribute to the [repo](https://github.com/karagatandev/porter).
 
 # Connecting the CLI to a locally running instance of Porter
 

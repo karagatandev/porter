@@ -4,9 +4,9 @@
 package usage
 
 import (
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/repository"
 )
 
 func GetLimit(repo repository.Repository, proj *models.Project) (limit *types.ProjectUsage, err error) {

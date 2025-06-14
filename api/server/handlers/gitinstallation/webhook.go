@@ -3,17 +3,17 @@ package gitinstallation
 import (
 	"net/http"
 
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/telemetry"
 
 	"github.com/google/go-github/v41/github"
-	"github.com/porter-dev/porter/api/server/authz"
-	"github.com/porter-dev/porter/api/server/handlers"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/apierrors"
-	"github.com/porter-dev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/server/authz"
+	"github.com/karagatandev/porter/api/server/handlers"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/apierrors"
+	"github.com/karagatandev/porter/api/server/shared/config"
 	"gorm.io/gorm"
 
-	ints "github.com/porter-dev/porter/internal/models/integrations"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
 )
 
 type GithubAppWebhookHandler struct {

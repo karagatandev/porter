@@ -10,9 +10,9 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/getsentry/sentry-go"
-	"github.com/porter-dev/porter/cli/cmd/commands"
-	"github.com/porter-dev/porter/cli/cmd/config"
-	"github.com/porter-dev/porter/cli/cmd/errors"
+	"github.com/karagatandev/porter/cli/cmd/commands"
+	"github.com/karagatandev/porter/cli/cmd/config"
+	"github.com/karagatandev/porter/cli/cmd/errors"
 )
 
 func main() {

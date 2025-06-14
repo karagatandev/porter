@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // CreateAWSIntegration creates an AWS integration with the given request options

@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/porter-dev/porter/pkg/logger"
+	"github.com/karagatandev/porter/pkg/logger"
 )
 
 type requestLoggerResponseWriter struct {

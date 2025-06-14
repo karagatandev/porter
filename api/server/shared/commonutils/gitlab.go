@@ -1,8 +1,8 @@
 package commonutils
 
 import (
-	"github.com/porter-dev/porter/api/server/shared/config"
-	ints "github.com/porter-dev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
 	"golang.org/x/oauth2"
 )
 

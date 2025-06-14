@@ -3,12 +3,12 @@ package porter_app
 import (
 	"context"
 
-	v1 "github.com/porter-dev/porter/internal/porter_app/v1"
-	v2 "github.com/porter-dev/porter/internal/porter_app/v2"
+	v1 "github.com/karagatandev/porter/internal/porter_app/v1"
+	v2 "github.com/karagatandev/porter/internal/porter_app/v2"
 
 	"sigs.k8s.io/yaml"
 
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/telemetry"
 )
 
 // PorterYamlVersion is a string type for the version of the porter yaml

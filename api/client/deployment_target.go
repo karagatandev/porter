@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/google/uuid"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // CreateDeploymentTarget creates a deployment target with the given request options

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/porter-dev/porter/api/server/shared/config/envloader"
-	lr "github.com/porter-dev/porter/pkg/logger"
+	"github.com/karagatandev/porter/api/server/shared/config/envloader"
+	lr "github.com/karagatandev/porter/pkg/logger"
 )
 
 func main() {

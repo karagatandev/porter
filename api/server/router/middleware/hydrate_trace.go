@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/telemetry"
 	"go.opentelemetry.io/otel/trace"
 )
 

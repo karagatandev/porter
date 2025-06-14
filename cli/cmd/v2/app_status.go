@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"github.com/fatih/color"
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/server/handlers/porter_app"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/server/handlers/porter_app"
 )
 
 const (

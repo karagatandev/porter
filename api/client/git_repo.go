@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // ListGitInstallationIDs returns a list of Git installation IDs for a user

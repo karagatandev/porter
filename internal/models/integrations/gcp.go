@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"

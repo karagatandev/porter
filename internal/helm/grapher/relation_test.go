@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/porter-dev/porter/internal/helm/grapher"
+	"github.com/karagatandev/porter/internal/helm/grapher"
 )
 
 var c7 = grapher.Object{

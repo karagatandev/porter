@@ -1,11 +1,11 @@
 package gorm
 
 import (
-	"github.com/porter-dev/porter/internal/encryption"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/encryption"
+	"github.com/karagatandev/porter/internal/repository"
 	"gorm.io/gorm"
 
-	ints "github.com/porter-dev/porter/internal/models/integrations"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
 )
 
 // SlackIntegrationRepository uses gorm.DB for querying the database

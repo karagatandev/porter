@@ -9,11 +9,11 @@ import (
 	"time"
 
 	"github.com/gorilla/sessions"
-	"github.com/porter-dev/porter/api/server/shared/apierrors"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/auth/token"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/api/server/shared/apierrors"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/auth/token"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 // AuthNFactory generates a middleware handler `AuthN`

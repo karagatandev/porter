@@ -7,10 +7,10 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/karagatandev/porter/internal/porter_app"
+	v2 "github.com/karagatandev/porter/internal/porter_app/v2"
 	"github.com/matryer/is"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
-	"github.com/porter-dev/porter/internal/porter_app"
-	v2 "github.com/porter-dev/porter/internal/porter_app/v2"
 	"gopkg.in/yaml.v2"
 )
 

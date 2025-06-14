@@ -1,6 +1,9 @@
-module github.com/porter-dev/porter
+module github.com/karagatandev/porter
 
 go 1.20
+
+replace github.com/mitchellh/osext => github.com/kardianos/osext v0.0.0-20200226163009-1fc37bb284d0
+
 
 require (
 	cloud.google.com/go v0.110.2 // indirect

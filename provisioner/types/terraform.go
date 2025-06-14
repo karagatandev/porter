@@ -1,6 +1,6 @@
 package types
 
-import "github.com/porter-dev/porter/provisioner/pb"
+import "github.com/karagatandev/porter/provisioner/pb"
 
 type TerraformEvent string
 

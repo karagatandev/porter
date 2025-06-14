@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/karagatandev/porter/internal/deployment_target"
+	"github.com/karagatandev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/internal/kubernetes/environment_groups"
+	"github.com/karagatandev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/telemetry"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
-	"github.com/porter-dev/porter/internal/deployment_target"
-	"github.com/porter-dev/porter/internal/kubernetes"
-	"github.com/porter-dev/porter/internal/kubernetes/environment_groups"
-	"github.com/porter-dev/porter/internal/repository"
-	"github.com/porter-dev/porter/internal/telemetry"
 )
 
 type envVariarableOptions struct {

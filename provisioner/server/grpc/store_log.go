@@ -5,9 +5,9 @@ import (
 	"io"
 	"strings"
 
-	"github.com/porter-dev/porter/provisioner/integrations/redis_stream"
-	"github.com/porter-dev/porter/provisioner/pb"
-	"github.com/porter-dev/porter/provisioner/types"
+	"github.com/karagatandev/porter/provisioner/integrations/redis_stream"
+	"github.com/karagatandev/porter/provisioner/pb"
+	"github.com/karagatandev/porter/provisioner/types"
 )
 
 func (s *ProvisionerServer) StoreLog(stream pb.Provisioner_StoreLogServer) error {

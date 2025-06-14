@@ -4,12 +4,12 @@ import (
 	"fmt"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/server/shared/router"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/server/shared/router"
+	"github.com/karagatandev/porter/api/types"
 
-	v1Template "github.com/porter-dev/porter/api/server/handlers/v1/template"
+	v1Template "github.com/karagatandev/porter/api/server/handlers/v1/template"
 )
 
 // swagger:parameters createRegistry listRegistries listTemplates

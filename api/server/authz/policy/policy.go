@@ -1,7 +1,7 @@
 package policy
 
 import (
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // HasScopeAccess checks that a user can perform an action (`verb`) against a specific

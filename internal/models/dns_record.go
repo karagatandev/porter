@@ -3,7 +3,7 @@ package models
 import (
 	"fmt"
 
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 	"gorm.io/gorm"
 )
 

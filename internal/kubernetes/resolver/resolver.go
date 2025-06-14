@@ -6,14 +6,14 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/features"
-	"github.com/porter-dev/porter/internal/kubernetes"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/features"
+	"github.com/karagatandev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/repository"
 	"k8s.io/client-go/tools/clientcmd/api"
 
-	ints "github.com/porter-dev/porter/internal/models/integrations"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
 )
 
 // CandidateResolver will resolve a cluster candidate to create a new cluster

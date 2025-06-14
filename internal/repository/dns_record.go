@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 // DNSRecordRepository represents the set of queries on the

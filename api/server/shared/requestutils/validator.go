@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	v10Validator "github.com/go-playground/validator/v10"
-	"github.com/porter-dev/porter/api/server/shared/apierrors"
-	"github.com/porter-dev/porter/internal/validator"
+	"github.com/karagatandev/porter/api/server/shared/apierrors"
+	"github.com/karagatandev/porter/internal/validator"
 )
 
 // Validator will validate the fields for a request object to ensure that

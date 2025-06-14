@@ -7,10 +7,10 @@ import (
 	"testing"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/porter-dev/porter/api/server/shared/apierrors"
-	"github.com/porter-dev/porter/api/server/shared/apitest"
-	"github.com/porter-dev/porter/api/server/shared/requestutils"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/server/shared/apierrors"
+	"github.com/karagatandev/porter/api/server/shared/apitest"
+	"github.com/karagatandev/porter/api/server/shared/requestutils"
+	"github.com/karagatandev/porter/api/types"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/types"
 )
 
 type NamespaceScopedFactory struct {

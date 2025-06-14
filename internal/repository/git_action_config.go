@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/porter-dev/porter/internal/models"
+import "github.com/karagatandev/porter/internal/models"
 
 // GitActionConfigRepository represents the set of queries on the
 // GitActionConfig model

@@ -6,9 +6,9 @@ import (
 	"strings"
 
 	jsonpatch "github.com/evanphx/json-patch/v5"
+	"github.com/karagatandev/porter/internal/telemetry"
 	"github.com/porter-dev/api-contracts/generated/go/helpers"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
-	"github.com/porter-dev/porter/internal/telemetry"
 )
 
 // PatchApp applies a set of JSON patch operations to an app proto and returns the modified proto

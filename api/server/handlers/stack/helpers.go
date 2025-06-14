@@ -3,11 +3,11 @@ package stack
 import (
 	"context"
 
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/helm"
-	"github.com/porter-dev/porter/internal/helm/loader"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/helm"
+	"github.com/karagatandev/porter/internal/helm/loader"
+	"github.com/karagatandev/porter/internal/models"
 	"github.com/stefanmcshane/helm/pkg/release"
 )
 

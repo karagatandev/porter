@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/porter-dev/porter/api/server/router"
-	"github.com/porter-dev/porter/api/server/shared/apitest"
+	"github.com/karagatandev/porter/api/server/router"
+	"github.com/karagatandev/porter/api/server/shared/apitest"
 )
 
 func main() {

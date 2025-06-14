@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/cli/cmd/deploy"
+	"github.com/karagatandev/porter/internal/integrations/preview"
 	"github.com/mitchellh/mapstructure"
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/cli/cmd/deploy"
-	"github.com/porter-dev/porter/internal/integrations/preview"
 
 	switchboardTypes "github.com/porter-dev/switchboard/pkg/types"
 )

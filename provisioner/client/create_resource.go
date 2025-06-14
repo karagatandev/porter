@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	ptypes "github.com/porter-dev/porter/provisioner/types"
+	ptypes "github.com/karagatandev/porter/provisioner/types"
 )
 
 // CreateResource posts Terraform output to the provisioner service and creates the backing

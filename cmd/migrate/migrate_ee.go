@@ -7,8 +7,8 @@ import (
 	"log"
 
 	"github.com/joeshaw/envdecode"
-	"github.com/porter-dev/porter/api/server/shared/config/env"
-	"github.com/porter-dev/porter/ee/migrate"
+	"github.com/karagatandev/porter/api/server/shared/config/env"
+	"github.com/karagatandev/porter/ee/migrate"
 	"gorm.io/gorm"
 )
 

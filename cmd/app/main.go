@@ -13,18 +13,18 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/porter-dev/porter/api/server"
-	"github.com/porter-dev/porter/api/server/router"
+	"github.com/karagatandev/porter/api/server"
+	"github.com/karagatandev/porter/api/server/router"
 
-	"github.com/porter-dev/porter/api/authmanagement"
+	"github.com/karagatandev/porter/api/authmanagement"
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/telemetry"
 
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/server/shared/config/loader"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/server/shared/config/loader"
+	"github.com/karagatandev/porter/internal/models"
 	"gorm.io/gorm"
 )
 

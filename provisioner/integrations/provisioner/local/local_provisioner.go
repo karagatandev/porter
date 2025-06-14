@@ -7,8 +7,8 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/provisioner/integrations/provisioner"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/provisioner/integrations/provisioner"
 )
 
 type LocalProvisioner struct {

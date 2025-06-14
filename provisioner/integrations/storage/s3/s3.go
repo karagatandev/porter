@@ -10,9 +10,9 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/porter-dev/porter/internal/encryption"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/provisioner/integrations/storage"
+	"github.com/karagatandev/porter/internal/encryption"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/provisioner/integrations/storage"
 )
 
 type S3StorageClient struct {

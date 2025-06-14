@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/go-test/deep"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/features"
-	"github.com/porter-dev/porter/internal/models"
-	ints "github.com/porter-dev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/features"
+	"github.com/karagatandev/porter/internal/models"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
 	orm "gorm.io/gorm"
 )
 

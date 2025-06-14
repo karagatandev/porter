@@ -4,11 +4,11 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/porter-dev/porter/api/server/handlers/user"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/apitest"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/repository/test"
+	"github.com/karagatandev/porter/api/server/handlers/user"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/apitest"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/repository/test"
 )
 
 func TestCreateUserSuccessful(t *testing.T) {

@@ -7,11 +7,11 @@ import (
 
 	"github.com/porter-dev/api-contracts/generated/go/porter/v1/porterv1connect"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/kubernetes"
-	"github.com/porter-dev/porter/internal/kubernetes/nodes"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/internal/kubernetes/nodes"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/repository"
 	"golang.org/x/oauth2"
 	"gorm.io/gorm"
 )

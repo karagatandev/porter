@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/go-test/deep"
-	"github.com/porter-dev/porter/internal/models"
-	ints "github.com/porter-dev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/internal/models"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
 	"gorm.io/gorm"
 	orm "gorm.io/gorm"
 )

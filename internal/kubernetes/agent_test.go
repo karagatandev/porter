@@ -3,7 +3,7 @@ package kubernetes_test
 import (
 	"testing"
 
-	"github.com/porter-dev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/internal/kubernetes"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/discovery"

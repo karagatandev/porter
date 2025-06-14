@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/porter-dev/porter/api/server/shared/apierrors"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/provisioner/server/config"
+	"github.com/karagatandev/porter/api/server/shared/apierrors"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/provisioner/server/config"
 	"golang.org/x/crypto/bcrypt"
 )
 

@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/helm/loader"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/helm/loader"
+	"github.com/karagatandev/porter/internal/models"
 	"github.com/stefanmcshane/helm/pkg/chart"
 
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/repository"
 )
 
 // HelmRepo wraps the gorm HelmRepo model

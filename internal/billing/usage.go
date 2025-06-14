@@ -10,8 +10,8 @@ import (
 	"time"
 
 	"github.com/getlago/lago-go-client"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/telemetry"
 )
 
 const (

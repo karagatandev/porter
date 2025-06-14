@@ -3,8 +3,8 @@ package porter_app
 import (
 	"fmt"
 
+	"github.com/karagatandev/porter/internal/integrations/preview"
 	"github.com/mitchellh/mapstructure"
-	"github.com/porter-dev/porter/internal/integrations/preview"
 	"github.com/porter-dev/switchboard/pkg/types"
 )
 

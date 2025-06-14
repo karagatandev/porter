@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/go-test/deep"
-	"github.com/porter-dev/porter/internal/auth/token"
+	"github.com/karagatandev/porter/internal/auth/token"
 )
 
 func TestGetAndEncodeTokenForUser(t *testing.T) {

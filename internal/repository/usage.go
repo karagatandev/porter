@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/porter-dev/porter/internal/models"
+import "github.com/karagatandev/porter/internal/models"
 
 // ProjectUsageRepository represents the set of queries on the ProjectUsage model
 type ProjectUsageRepository interface {

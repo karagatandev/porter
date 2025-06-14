@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/go-test/deep"
-	"github.com/porter-dev/porter/api/types"
-	ints "github.com/porter-dev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/api/types"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
 	orm "gorm.io/gorm"
 )
 

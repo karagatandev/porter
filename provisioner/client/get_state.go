@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	ptypes "github.com/porter-dev/porter/provisioner/types"
+	ptypes "github.com/karagatandev/porter/provisioner/types"
 )
 
 var ErrDoesNotExist = fmt.Errorf("state file does not exist")

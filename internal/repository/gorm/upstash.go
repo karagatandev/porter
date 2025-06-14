@@ -3,10 +3,10 @@ package gorm
 import (
 	"context"
 
-	"github.com/porter-dev/porter/internal/encryption"
-	ints "github.com/porter-dev/porter/internal/models/integrations"
-	"github.com/porter-dev/porter/internal/repository"
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/encryption"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/telemetry"
 	"gorm.io/gorm"
 )
 

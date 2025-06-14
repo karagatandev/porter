@@ -6,9 +6,9 @@ import (
 	"net"
 	"strings"
 
-	"github.com/porter-dev/porter/internal/encryption"
-	"github.com/porter-dev/porter/internal/integrations/dns"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/encryption"
+	"github.com/karagatandev/porter/internal/integrations/dns"
+	"github.com/karagatandev/porter/internal/models"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/client-go/kubernetes"
 

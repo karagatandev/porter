@@ -3,8 +3,8 @@ package grpc
 import (
 	"fmt"
 
-	"github.com/porter-dev/porter/provisioner/integrations/redis_stream"
-	"github.com/porter-dev/porter/provisioner/pb"
+	"github.com/karagatandev/porter/provisioner/integrations/redis_stream"
+	"github.com/karagatandev/porter/provisioner/pb"
 )
 
 func (s *ProvisionerServer) GetLog(infra *pb.Infra, server pb.Provisioner_GetLogServer) error {

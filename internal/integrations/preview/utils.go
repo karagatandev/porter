@@ -1,6 +1,6 @@
 package preview
 
-import "github.com/porter-dev/porter/api/types"
+import "github.com/karagatandev/porter/api/types"
 
 type Source struct {
 	Name          string

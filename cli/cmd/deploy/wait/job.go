@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/fatih/color"
-	api "github.com/porter-dev/porter/api/client"
+	api "github.com/karagatandev/porter/api/client"
 	v1 "k8s.io/api/batch/v1"
 )
 

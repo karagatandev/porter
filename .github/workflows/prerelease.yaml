@@ -141,7 +141,7 @@ jobs:
           NODE_OPTIONS: --openssl-legacy-provider
       - name: Build Linux binaries
         run: |
-          go build -ldflags="-w -s -X 'github.com/porter-dev/porter/cli/cmd/config.Version=${{steps.tag_name.outputs.tag}}' -X 'github.com/porter-dev/porter/cli/cmd/errors.SentryDSN=${{secrets.SENTRY_DSN}}'" -a -tags cli -o ./porter ./cli &
+          go build -ldflags="-w -s -X 'github.com/karagatandev/porter/cli/cmd/config.Version=${{steps.tag_name.outputs.tag}}' -X 'github.com/karagatandev/porter/cli/cmd/errors.SentryDSN=${{secrets.SENTRY_DSN}}'" -a -tags cli -o ./porter ./cli &
           go build -ldflags="-w -s -X 'main.Version=${{steps.tag_name.outputs.tag}}'" -a -o ./docker-credential-porter ./cmd/docker-credential-porter/ &
           go build -ldflags="-w -s -X 'main.Version=${{steps.tag_name.outputs.tag}}'" -a -tags ee -o ./portersvr ./cmd/app/ &
           wait
@@ -198,7 +198,7 @@ jobs:
           EOL
       - name: Build and Zip MacOS amd64 binaries
         run: |
-          go build -ldflags="-w -s -X 'github.com/porter-dev/porter/cli/cmd/config.Version=${{steps.tag_name.outputs.tag}}' -X 'github.com/porter-dev/porter/cli/cmd/errors.SentryDSN=${{secrets.SENTRY_DSN}}'" -a -tags cli -o ./amd64/porter ./cli &
+          go build -ldflags="-w -s -X 'github.com/karagatandev/porter/cli/cmd/config.Version=${{steps.tag_name.outputs.tag}}' -X 'github.com/karagatandev/porter/cli/cmd/errors.SentryDSN=${{secrets.SENTRY_DSN}}'" -a -tags cli -o ./amd64/porter ./cli &
           go build -ldflags="-w -s -X 'main.Version=${{steps.tag_name.outputs.tag}}'" -a -o ./amd64/docker-credential-porter ./cmd/docker-credential-porter/ &
           go build -ldflags="-w -s -X 'main.Version=${{steps.tag_name.outputs.tag}}'" -a -tags ee -o ./amd64/portersvr ./cmd/app/ &
           wait
@@ -479,7 +479,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
 
-          git clone https://portersupport:${{ secrets.PORTER_DEV_GITHUB_TOKEN }}@github.com/porter-dev/porter-update-action
+          git clone https://portersupport:${{ secrets.PORTER_DEV_GITHUB_TOKEN }}@github.com/karagatandev/porter-update-action
 
           cd porter-update-action
 
@@ -487,7 +487,7 @@ jobs:
 
           cat >Dockerfile <<EOL
           FROM ghcr.io/porter-dev/porter/porter-cli:${{steps.tag_name.outputs.tag}}
-          LABEL org.opencontainers.image.source="https://github.com/porter-dev/porter"
+          LABEL org.opencontainers.image.source="https://github.com/karagatandev/porter"
 
           COPY entrypoint.sh /action/
 
@@ -516,7 +516,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
 
-          git clone https://portersupport:${{ secrets.PORTER_DEV_GITHUB_TOKEN }}@github.com/porter-dev/porter-cli-action
+          git clone https://portersupport:${{ secrets.PORTER_DEV_GITHUB_TOKEN }}@github.com/karagatandev/porter-cli-action
 
           cd porter-cli-action
 
@@ -524,7 +524,7 @@ jobs:
 
           cat >Dockerfile <<EOL
           FROM ghcr.io/porter-dev/porter/porter-cli:${{steps.tag_name.outputs.tag}}
-          LABEL org.opencontainers.image.source="https://github.com/porter-dev/porter"
+          LABEL org.opencontainers.image.source="https://github.com/karagatandev/porter"
 
           COPY entrypoint.sh /action/
 

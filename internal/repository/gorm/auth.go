@@ -1,13 +1,13 @@
 package gorm
 
 import (
-	"github.com/porter-dev/porter/internal/encryption"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/repository"
-	"github.com/porter-dev/porter/internal/repository/credentials"
+	"github.com/karagatandev/porter/internal/encryption"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/repository/credentials"
 	"gorm.io/gorm"
 
-	ints "github.com/porter-dev/porter/internal/models/integrations"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
 )
 
 // KubeIntegrationRepository uses gorm.DB for querying the database

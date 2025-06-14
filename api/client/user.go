@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // AuthCheck performs a check to ensure that the user is logged in

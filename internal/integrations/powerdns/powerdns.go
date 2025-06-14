@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/porter-dev/porter/internal/integrations/dns"
+	"github.com/karagatandev/porter/internal/integrations/dns"
 )
 
 // Client contains an API client for a PowerDNS server

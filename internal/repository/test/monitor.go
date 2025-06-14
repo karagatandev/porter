@@ -1,8 +1,8 @@
 package test
 
 import (
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/repository"
 )
 
 type MonitorTestResultRepository struct{}

@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/telemetry"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/telemetry"
 )
 
 func createBuildEvent(ctx context.Context, client api.Client, applicationName string, projectId uint, clusterId uint, deploymentTargetID string, commitSHA string) (string, error) {

@@ -4,7 +4,7 @@
 package main
 
 import (
-	"github.com/porter-dev/porter/api/server/shared/config/env"
+	"github.com/karagatandev/porter/api/server/shared/config/env"
 	"gorm.io/gorm"
 )
 

@@ -9,8 +9,8 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/cli/cmd/utils"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/cli/cmd/utils"
 	"github.com/spf13/viper"
 	"k8s.io/client-go/util/homedir"
 )

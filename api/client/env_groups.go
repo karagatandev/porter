@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/porter-dev/porter/api/server/handlers/environment_groups"
+	"github.com/karagatandev/porter/api/server/handlers/environment_groups"
 )
 
 // GetLatestEnvGroupVariables gets the latest environment group variables for a given environment group

@@ -8,17 +8,17 @@ import (
 	"os"
 	"strings"
 
-	"github.com/porter-dev/porter/internal/adapter"
-	"github.com/porter-dev/porter/provisioner/integrations/redis_stream"
-	"github.com/porter-dev/porter/provisioner/server/config"
-	"github.com/porter-dev/porter/provisioner/server/router"
+	"github.com/karagatandev/porter/internal/adapter"
+	"github.com/karagatandev/porter/provisioner/integrations/redis_stream"
+	"github.com/karagatandev/porter/provisioner/server/config"
+	"github.com/karagatandev/porter/provisioner/server/router"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 
-	"github.com/porter-dev/porter/provisioner/pb"
+	"github.com/karagatandev/porter/provisioner/pb"
 	"google.golang.org/grpc"
 
-	pgrpc "github.com/porter-dev/porter/provisioner/server/grpc"
+	pgrpc "github.com/karagatandev/porter/provisioner/server/grpc"
 )
 
 // Version will be linked by an ldflag during build

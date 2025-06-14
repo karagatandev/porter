@@ -3,11 +3,11 @@ package project_test
 import (
 	"testing"
 
-	"github.com/porter-dev/porter/api/server/handlers/project"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/apitest"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/repository/test"
+	"github.com/karagatandev/porter/api/server/handlers/project"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/apitest"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/repository/test"
 )
 
 func TestCreateProjectSuccessful(t *testing.T) {

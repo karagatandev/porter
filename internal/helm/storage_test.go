@@ -7,9 +7,9 @@ import (
 	"github.com/stefanmcshane/helm/pkg/chart"
 	"github.com/stefanmcshane/helm/pkg/release"
 
-	"github.com/porter-dev/porter/internal/helm"
-	"github.com/porter-dev/porter/internal/kubernetes"
-	"github.com/porter-dev/porter/pkg/logger"
+	"github.com/karagatandev/porter/internal/helm"
+	"github.com/karagatandev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/pkg/logger"
 	"github.com/stefanmcshane/helm/pkg/storage"
 	"k8s.io/client-go/kubernetes/fake"
 )

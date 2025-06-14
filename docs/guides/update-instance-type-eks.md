@@ -7,7 +7,7 @@ There are multiple scenarios where it makes sense to update the instance type of
 Regardless, changing the instance type of an EKS node group follows the same general process. In this guide, we'll walk through a basic example and highlight a few things to look out for when updating an existing cluster. 
 
 ## Prerequisites
-This guide assumes you have an EKS cluster with autoscaling enabled. The node group for your cluster should also be self-managed, meaning you can view and update the EC2 instances and auto scaling group(s) attached to your cluster. Note that if you provisioned your cluster through [Porter](https://github.com/porter-dev/porter) this is automatically the case.
+This guide assumes you have an EKS cluster with autoscaling enabled. The node group for your cluster should also be self-managed, meaning you can view and update the EC2 instances and auto scaling group(s) attached to your cluster. Note that if you provisioned your cluster through [Porter](https://github.com/karagatandev/porter) this is automatically the case.
 
 ## Step 1: Create a new launch configuration
 In this example, we'll upgrade a group of EKS worker nodes from t3.medium to t3.xlarge instances. To start, we can see from the Porter dashboard (or [AWS console](https://console.aws.amazon.com/ec2#Instances:)) that our EKS cluster has three t3.medium instances for user workloads and two t2.medium instances for Kubernetes system components:

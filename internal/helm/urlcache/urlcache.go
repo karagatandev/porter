@@ -1,6 +1,6 @@
 package urlcache
 
-import "github.com/porter-dev/porter/internal/helm/loader"
+import "github.com/karagatandev/porter/internal/helm/loader"
 
 // ChartLookupURLs contains an in-memory store of Porter chart names matched with
 // a repo URL, so that finding a chart does not involve multiple lookups to our

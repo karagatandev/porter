@@ -12,9 +12,9 @@ import (
 
 	packclient "github.com/buildpacks/pack/pkg/client"
 	githubApi "github.com/google/go-github/v41/github"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/cli/cmd/docker"
-	"github.com/porter-dev/porter/cli/cmd/github"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/cli/cmd/docker"
+	"github.com/karagatandev/porter/cli/cmd/github"
 	"k8s.io/client-go/util/homedir"
 )
 

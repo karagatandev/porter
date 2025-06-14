@@ -4,7 +4,7 @@
 package config
 
 import (
-	"github.com/porter-dev/porter/ee/integrations/vault"
+	"github.com/karagatandev/porter/ee/integrations/vault"
 )
 
 func init() {

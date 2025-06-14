@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/porter-dev/porter/internal/models"
+import "github.com/karagatandev/porter/internal/models"
 
 // StackRepository represents the set of queries on the Stack model
 type StackRepository interface {

@@ -1,7 +1,7 @@
 package apitest
 
 import (
-	"github.com/porter-dev/porter/internal/notifier"
+	"github.com/karagatandev/porter/internal/notifier"
 )
 
 // FakeUserNotifier just stores data about a single notification,

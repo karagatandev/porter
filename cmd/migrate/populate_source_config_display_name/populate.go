@@ -1,8 +1,8 @@
 package populate_source_config_display_name
 
 import (
-	"github.com/porter-dev/porter/internal/models"
-	lr "github.com/porter-dev/porter/pkg/logger"
+	"github.com/karagatandev/porter/internal/models"
+	lr "github.com/karagatandev/porter/pkg/logger"
 	_gorm "gorm.io/gorm"
 )
 

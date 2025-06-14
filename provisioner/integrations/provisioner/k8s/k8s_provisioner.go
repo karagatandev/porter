@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/provisioner/integrations/provisioner"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/provisioner/integrations/provisioner"
 	batchv1 "k8s.io/api/batch/v1"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

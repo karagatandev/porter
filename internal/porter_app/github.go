@@ -10,9 +10,9 @@ import (
 	"github.com/bradleyfalzon/ghinstallation/v2"
 	"github.com/google/go-github/v39/github"
 	"github.com/google/uuid"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/repository"
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/telemetry"
 )
 
 // GitSource is a struct that contains the git repo name and id

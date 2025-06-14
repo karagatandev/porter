@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 // AWSAssumeRoleChainer represents queries on the aws_assume_role_chain table,

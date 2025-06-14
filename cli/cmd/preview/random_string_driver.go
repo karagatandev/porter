@@ -3,8 +3,8 @@ package preview
 import (
 	"crypto/rand"
 
+	"github.com/karagatandev/porter/internal/integrations/preview"
 	"github.com/mitchellh/mapstructure"
-	"github.com/porter-dev/porter/internal/integrations/preview"
 	"github.com/porter-dev/switchboard/pkg/drivers"
 	"github.com/porter-dev/switchboard/pkg/models"
 )

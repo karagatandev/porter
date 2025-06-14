@@ -4,17 +4,17 @@ import (
 	"os"
 	"testing"
 
-	"github.com/porter-dev/porter/internal/features"
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/features"
+	"github.com/karagatandev/porter/internal/telemetry"
 
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/server/shared/config/envloader"
-	"github.com/porter-dev/porter/internal/analytics"
-	"github.com/porter-dev/porter/internal/auth/sessionstore"
-	"github.com/porter-dev/porter/internal/auth/token"
-	"github.com/porter-dev/porter/internal/billing"
-	"github.com/porter-dev/porter/internal/repository/test"
-	"github.com/porter-dev/porter/pkg/logger"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/server/shared/config/envloader"
+	"github.com/karagatandev/porter/internal/analytics"
+	"github.com/karagatandev/porter/internal/auth/sessionstore"
+	"github.com/karagatandev/porter/internal/auth/token"
+	"github.com/karagatandev/porter/internal/billing"
+	"github.com/karagatandev/porter/internal/repository/test"
+	"github.com/karagatandev/porter/pkg/logger"
 )
 
 type TestConfigLoader struct {

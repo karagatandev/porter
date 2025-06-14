@@ -3,11 +3,11 @@ package porter_app
 import (
 	"context"
 
-	"github.com/porter-dev/porter/internal/integrations/dns"
-	"github.com/porter-dev/porter/internal/kubernetes"
-	"github.com/porter-dev/porter/internal/kubernetes/domain"
-	"github.com/porter-dev/porter/internal/repository"
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/integrations/dns"
+	"github.com/karagatandev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/internal/kubernetes/domain"
+	"github.com/karagatandev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/telemetry"
 )
 
 // CreatePorterSubdomainInput is the input to the CreatePorterSubdomain function

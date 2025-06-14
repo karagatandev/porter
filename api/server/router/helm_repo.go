@@ -2,11 +2,11 @@ package router
 
 import (
 	"github.com/go-chi/chi/v5"
-	"github.com/porter-dev/porter/api/server/handlers/helmrepo"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/server/shared/router"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/server/handlers/helmrepo"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/server/shared/router"
+	"github.com/karagatandev/porter/api/types"
 )
 
 func NewHelmRepoScopedRegisterer(children ...*router.Registerer) *router.Registerer {

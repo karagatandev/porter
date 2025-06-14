@@ -8,17 +8,17 @@ import (
 
 	semver "github.com/Masterminds/semver/v3"
 
-	"github.com/porter-dev/porter/api/server/authz"
-	"github.com/porter-dev/porter/api/server/handlers"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/apierrors"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/helm"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/notifier"
-	"github.com/porter-dev/porter/internal/notifier/slack"
-	"github.com/porter-dev/porter/internal/stacks"
+	"github.com/karagatandev/porter/api/server/authz"
+	"github.com/karagatandev/porter/api/server/handlers"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/apierrors"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/helm"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/notifier"
+	"github.com/karagatandev/porter/internal/notifier/slack"
+	"github.com/karagatandev/porter/internal/stacks"
 	"github.com/stefanmcshane/helm/pkg/release"
 )
 

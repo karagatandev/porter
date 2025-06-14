@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/cli/cmd/config"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/cli/cmd/config"
 )
 
 // AppPushInput is the input to the AppPush function

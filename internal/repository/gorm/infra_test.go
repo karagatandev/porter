@@ -6,8 +6,8 @@ import (
 	"gorm.io/gorm"
 
 	"github.com/go-test/deep"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 func TestCreateInfra(t *testing.T) {

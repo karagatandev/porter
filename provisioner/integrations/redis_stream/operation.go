@@ -8,8 +8,8 @@ import (
 	"time"
 
 	redis "github.com/go-redis/redis/v8"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/provisioner/types"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/provisioner/types"
 )
 
 func PushToOperationStream(

@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/cli/cmd/config"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/cli/cmd/config"
 )
 
 // UpdateFull implements the functionality of the `porter build` command for validate apply v2 projects

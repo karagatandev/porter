@@ -6,11 +6,11 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/porter-dev/porter/api/server/authn"
-	"github.com/porter-dev/porter/api/server/shared/apitest"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/api/server/authn"
+	"github.com/karagatandev/porter/api/server/shared/apitest"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/models"
 	"github.com/stretchr/testify/assert"
 	"gorm.io/gorm"
 )

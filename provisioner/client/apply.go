@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/porter-dev/porter/api/types"
-	ptypes "github.com/porter-dev/porter/provisioner/types"
+	"github.com/karagatandev/porter/api/types"
+	ptypes "github.com/karagatandev/porter/provisioner/types"
 )
 
 // Apply initiates a new apply operation for infra

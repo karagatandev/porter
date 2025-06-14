@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/porter-dev/porter/provisioner/pb";
+option go_package = "github.com/karagatandev/porter/provisioner/pb";
 
 // Provisioner represents the service for managing, updating, and deleting infrastructure.
 service Provisioner {

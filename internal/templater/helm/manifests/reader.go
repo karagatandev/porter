@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/porter-dev/porter/internal/templater"
-	"github.com/porter-dev/porter/internal/templater/utils"
+	"github.com/karagatandev/porter/internal/templater"
+	"github.com/karagatandev/porter/internal/templater/utils"
 	"github.com/stefanmcshane/helm/pkg/release"
 	"sigs.k8s.io/yaml"
 )

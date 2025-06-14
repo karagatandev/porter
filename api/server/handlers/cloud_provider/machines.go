@@ -8,13 +8,13 @@ import (
 
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 
-	"github.com/porter-dev/porter/api/server/handlers"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/apierrors"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/api/server/handlers"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/apierrors"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/telemetry"
 )
 
 // CloudProviderMachineTypesHandler checks for available machine types for a given cloud provider, account and region

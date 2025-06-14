@@ -5,15 +5,15 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/porter-dev/porter/api/server/authz"
-	"github.com/porter-dev/porter/api/server/handlers"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/apierrors"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/types"
-	porter_agent "github.com/porter-dev/porter/internal/kubernetes/porter_agent/v2"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/api/server/authz"
+	"github.com/karagatandev/porter/api/server/handlers"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/apierrors"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/types"
+	porter_agent "github.com/karagatandev/porter/internal/kubernetes/porter_agent/v2"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/telemetry"
 	v1 "k8s.io/api/core/v1"
 )
 
@@ -160,7 +160,7 @@ func (c *GetLogsWithinTimeRangeHandler) ServeHTTP(w http.ResponseWriter, r *http
  * Therefore if the podSelector we try to use is longer than 58 characters (63 characters minus 4 characters for the random string minus 1 character for the last hyphen), then it won't match any pods
  * e.g. podSelector "postgres-snowflake-connector-postgres-snowflake-service-wkr-" (60 chars) won't work because the pod is actually named "postgres-snowflake-connector-postgres-snowflake-service-wkqcpz2"
  * so we trim the podSelector to "postgres-snowflake-connector-postgres-snowflake-service-wk" (58 characters) to ensure we match the pod
- * This is only to fix current pods; new pods will be named correctly because we imposed service name limits in https://github.com/porter-dev/porter/pull/3439
+ * This is only to fix current pods; new pods will be named correctly because we imposed service name limits in https://github.com/karagatandev/porter/pull/3439
  * */
 func trimPodSelector(podSelector string) string {
 	if !strings.HasSuffix(podSelector, ".*") {

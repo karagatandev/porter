@@ -7,16 +7,16 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/apierrors"
-	"github.com/porter-dev/porter/ee/api/types"
-	"github.com/porter-dev/porter/ee/integrations/vault"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/repository/credentials"
-	"github.com/porter-dev/porter/internal/repository/gorm"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/apierrors"
+	"github.com/karagatandev/porter/ee/api/types"
+	"github.com/karagatandev/porter/ee/integrations/vault"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/repository/credentials"
+	"github.com/karagatandev/porter/internal/repository/gorm"
 	"golang.org/x/crypto/bcrypt"
 
-	"github.com/porter-dev/porter/provisioner/server/config"
+	"github.com/karagatandev/porter/provisioner/server/config"
 )
 
 type CredentialsGetHandler struct {

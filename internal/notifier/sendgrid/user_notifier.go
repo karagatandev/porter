@@ -1,7 +1,7 @@
 package sendgrid
 
 import (
-	"github.com/porter-dev/porter/internal/notifier"
+	"github.com/karagatandev/porter/internal/notifier"
 	"github.com/sendgrid/sendgrid-go"
 	"github.com/sendgrid/sendgrid-go/helpers/mail"
 )

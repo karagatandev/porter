@@ -10,13 +10,13 @@ import (
 	"golang.org/x/oauth2"
 	"gorm.io/gorm"
 
-	"github.com/porter-dev/porter/api/server/shared/apierrors"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/models/integrations"
-	"github.com/porter-dev/porter/internal/oauth"
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/api/server/shared/apierrors"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/internal/oauth"
+	"github.com/karagatandev/porter/internal/telemetry"
 )
 
 type GitInstallationScopedFactory struct {

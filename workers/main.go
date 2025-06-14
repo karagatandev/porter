@@ -16,17 +16,17 @@ import (
 	"github.com/go-chi/chi/middleware"
 	"github.com/go-chi/chi/v5"
 	"github.com/joeshaw/envdecode"
-	"github.com/porter-dev/porter/api/server/shared/config/env"
-	"github.com/porter-dev/porter/internal/adapter"
-	"github.com/porter-dev/porter/internal/opa"
-	"github.com/porter-dev/porter/internal/repository"
-	"github.com/porter-dev/porter/internal/worker"
-	"github.com/porter-dev/porter/workers/jobs"
+	"github.com/karagatandev/porter/api/server/shared/config/env"
+	"github.com/karagatandev/porter/internal/adapter"
+	"github.com/karagatandev/porter/internal/opa"
+	"github.com/karagatandev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/worker"
+	"github.com/karagatandev/porter/workers/jobs"
 	"gorm.io/gorm"
 
-	"github.com/porter-dev/porter/ee/integrations/vault"
-	rcreds "github.com/porter-dev/porter/internal/repository/credentials"
-	pgorm "github.com/porter-dev/porter/internal/repository/gorm"
+	"github.com/karagatandev/porter/ee/integrations/vault"
+	rcreds "github.com/karagatandev/porter/internal/repository/credentials"
+	pgorm "github.com/karagatandev/porter/internal/repository/gorm"
 )
 
 var (

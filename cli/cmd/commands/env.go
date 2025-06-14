@@ -8,11 +8,11 @@ import (
 
 	"github.com/briandowns/spinner"
 	"github.com/fatih/color"
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/server/handlers/environment_groups"
-	"github.com/porter-dev/porter/api/server/handlers/porter_app"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/cli/cmd/config"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/server/handlers/environment_groups"
+	"github.com/karagatandev/porter/api/server/handlers/porter_app"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/cli/cmd/config"
 	"github.com/spf13/cobra"
 )
 

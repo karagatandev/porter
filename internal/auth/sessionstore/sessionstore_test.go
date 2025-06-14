@@ -7,9 +7,9 @@ import (
 
 	"github.com/gorilla/securecookie"
 	"github.com/gorilla/sessions"
-	"github.com/porter-dev/porter/internal/repository/test"
+	"github.com/karagatandev/porter/internal/repository/test"
 
-	"github.com/porter-dev/porter/internal/auth/sessionstore"
+	"github.com/karagatandev/porter/internal/auth/sessionstore"
 )
 
 type headerOnlyResponseWriter http.Header

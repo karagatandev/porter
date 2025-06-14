@@ -6,10 +6,10 @@ import (
 	"testing"
 
 	"github.com/go-test/deep"
-	"github.com/porter-dev/porter/api/server/authz/policy"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/repository/test"
+	"github.com/karagatandev/porter/api/server/authz/policy"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/repository/test"
 	"github.com/stretchr/testify/assert"
 )
 

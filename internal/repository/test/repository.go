@@ -1,7 +1,7 @@
 package test
 
 import (
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/repository"
 )
 
 type TestRepository struct {

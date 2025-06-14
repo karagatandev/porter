@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/telemetry"
 
+	"github.com/karagatandev/porter/internal/helm/loader"
 	"github.com/pkg/errors"
-	"github.com/porter-dev/porter/internal/helm/loader"
 	"github.com/stefanmcshane/helm/pkg/action"
 	"github.com/stefanmcshane/helm/pkg/chart"
 	"github.com/stefanmcshane/helm/pkg/release"
@@ -22,10 +22,10 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/helm/pkg/chartutil"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/kubernetes"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/repository"
 )
 
 // Agent is a Helm agent for performing helm operations

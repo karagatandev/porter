@@ -3,8 +3,8 @@ package compliance
 import (
 	"context"
 
+	"github.com/karagatandev/porter/internal/telemetry"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
-	"github.com/porter-dev/porter/internal/telemetry"
 )
 
 // VendorComplianceCheckStatus is used to indicate the status of a compliance check from a vendor

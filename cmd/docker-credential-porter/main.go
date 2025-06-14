@@ -7,7 +7,7 @@ import (
 
 	"github.com/docker/docker-credential-helpers/credentials"
 	"github.com/fatih/color"
-	"github.com/porter-dev/porter/cmd/docker-credential-porter/helper"
+	"github.com/karagatandev/porter/cmd/docker-credential-porter/helper"
 )
 
 // Version will be linked by an ldflag during build

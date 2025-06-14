@@ -21,7 +21,7 @@ download_and_install() {
         porter_version="$PORTER_VERSION"
     fi
 
-    curl -L "https://github.com/porter-dev/porter/releases/download/${porter_version}/porter_${porter_version}_${osname}_x86_64.zip" --output porter.zip
+    curl -L "https://github.com/karagatandev/porter/releases/download/${porter_version}/porter_${porter_version}_${osname}_x86_64.zip" --output porter.zip
     unzip -o -a porter.zip
     rm porter.zip
 

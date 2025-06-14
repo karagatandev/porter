@@ -1,6 +1,6 @@
 package types
 
-import "github.com/porter-dev/porter/internal/repository/credentials"
+import "github.com/karagatandev/porter/internal/repository/credentials"
 
 type CredentialsExchangeRequest struct {
 	CredExchangeID    uint

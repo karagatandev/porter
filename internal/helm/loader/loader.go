@@ -9,12 +9,12 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/telemetry"
 
 	"k8s.io/helm/pkg/repo"
 	"sigs.k8s.io/yaml"
 
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 	"github.com/stefanmcshane/helm/pkg/chart"
 	chartloader "github.com/stefanmcshane/helm/pkg/chart/loader"
 )

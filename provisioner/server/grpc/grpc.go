@@ -4,10 +4,10 @@ import (
 	"context"
 	"strconv"
 
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/provisioner/pb"
-	"github.com/porter-dev/porter/provisioner/server/authn"
-	"github.com/porter-dev/porter/provisioner/server/config"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/provisioner/pb"
+	"github.com/karagatandev/porter/provisioner/server/authn"
+	"github.com/karagatandev/porter/provisioner/server/config"
 	"google.golang.org/grpc/metadata"
 )
 

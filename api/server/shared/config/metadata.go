@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/porter-dev/porter/api/server/shared/config/env"
+	"github.com/karagatandev/porter/api/server/shared/config/env"
 )
 
 type Metadata struct {

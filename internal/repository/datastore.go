@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 // DatastoreRepository represents the set of queries on the Datastore model

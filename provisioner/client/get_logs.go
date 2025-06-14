@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	ptypes "github.com/porter-dev/porter/provisioner/types"
+	ptypes "github.com/karagatandev/porter/provisioner/types"
 )
 
 // GetLogs returns logs from the operation, after the operation has completed

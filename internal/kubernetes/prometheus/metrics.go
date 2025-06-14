@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/telemetry"
 
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/client-go/kubernetes"

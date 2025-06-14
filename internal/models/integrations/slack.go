@@ -3,7 +3,7 @@ package integrations
 import (
 	"gorm.io/gorm"
 
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // SlackIntegration is a webhook notifier to a specific channel in a Slack workspace.

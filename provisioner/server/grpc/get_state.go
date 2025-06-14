@@ -3,10 +3,10 @@ package grpc
 import (
 	"fmt"
 
-	"github.com/porter-dev/porter/provisioner/integrations/redis_stream"
-	"github.com/porter-dev/porter/provisioner/pb"
+	"github.com/karagatandev/porter/provisioner/integrations/redis_stream"
+	"github.com/karagatandev/porter/provisioner/pb"
 
-	ptypes "github.com/porter-dev/porter/provisioner/types"
+	ptypes "github.com/karagatandev/porter/provisioner/types"
 )
 
 func (s *ProvisionerServer) GetStateUpdate(infra *pb.Infra, server pb.Provisioner_GetStateUpdateServer) error {

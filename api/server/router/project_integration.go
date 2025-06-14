@@ -4,11 +4,11 @@ import (
 	"fmt"
 
 	"github.com/go-chi/chi/v5"
-	project_integration "github.com/porter-dev/porter/api/server/handlers/project_integration"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/server/shared/router"
-	"github.com/porter-dev/porter/api/types"
+	project_integration "github.com/karagatandev/porter/api/server/handlers/project_integration"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/server/shared/router"
+	"github.com/karagatandev/porter/api/types"
 )
 
 func NewProjectIntegrationScopedRegisterer(children ...*router.Registerer) *router.Registerer {

@@ -1,8 +1,8 @@
 package gorm
 
 import (
-	"github.com/porter-dev/porter/internal/repository"
-	"github.com/porter-dev/porter/internal/repository/credentials"
+	"github.com/karagatandev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/repository/credentials"
 	"gorm.io/gorm"
 )
 

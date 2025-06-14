@@ -1,6 +1,6 @@
 # Contributing to Porter
 
-First off, thanks for considering contributing to Porter. There are many types of contributions you can make, including bug reports and fixes, improving documentation, writing tutorials, and larger feature requests or changes. You can contribute to this repo or the [porter-charts](https://github.com/porter-dev/porter-charts) repo if you're interested in developing charts. 
+First off, thanks for considering contributing to Porter. There are many types of contributions you can make, including bug reports and fixes, improving documentation, writing tutorials, and larger feature requests or changes. You can contribute to this repo or the [porter-charts](https://github.com/karagatandev/porter-charts) repo if you're interested in developing charts. 
 
 Before you contribute, make sure to read these guidelines thoroughly, so that you can get your pull request reviewed and finalized as quickly as possible. 
 
@@ -25,13 +25,13 @@ Bug reports help make Porter better for everyone. To create a bug report, select
 
 ## Development Process Overview 
 
-We officially build new releases every other Friday, but we merge new features and fixes to our hosted version as soon as those features are ready. If the PR can get reviewed and merged before the next release, we will add it to our public roadmap for that upcoming release (https://github.com/porter-dev/porter/projects), which gets announced to the community every other Friday.
+We officially build new releases every other Friday, but we merge new features and fixes to our hosted version as soon as those features are ready. If the PR can get reviewed and merged before the next release, we will add it to our public roadmap for that upcoming release (https://github.com/karagatandev/porter/projects), which gets announced to the community every other Friday.
 
 ### Good first issues and bug fixes
 
 > **Note:** if you're a first-time contributor, we recommend that you [follow this tutorial](http://makeapullrequest.com/) to learn how to start contributing. 
 
-If you want to start getting familiar with Porter's codebase, we do our best to tag issues with [`good-first-issue`](https://github.com/porter-dev/porter/labels/good%20first%20issue) if the issue is very limited in scope or only requires changes to a few localized files. If you'd like to be assigned an issue, feel free to reach out on Discord or over email, or you can simply comment on an issue you'd like to work on. 
+If you want to start getting familiar with Porter's codebase, we do our best to tag issues with [`good-first-issue`](https://github.com/karagatandev/porter/labels/good%20first%20issue) if the issue is very limited in scope or only requires changes to a few localized files. If you'd like to be assigned an issue, feel free to reach out on Discord or over email, or you can simply comment on an issue you'd like to work on. 
 
 ### Improving Documentation and Writing Tutorials
 
@@ -76,12 +76,12 @@ Happy developing!
 
 ### Testing 
 
-All backend changes made after [release 0.2.0](https://github.com/porter-dev/porter/projects/2) will require tests. Backend testing is done using Golang's [built in testing package](https://golang.org/pkg/testing/). Before pushing changes, run `go test ./...` in the root directory and make sure that your changes did not break any tests. While we don't require 100% code coverage for tests, we expect tests to cover all functionality and common edge cases/exceptions. If you're fixing a backend bug, add a test to ensure that bug doesn't come up again. 
+All backend changes made after [release 0.2.0](https://github.com/karagatandev/porter/projects/2) will require tests. Backend testing is done using Golang's [built in testing package](https://golang.org/pkg/testing/). Before pushing changes, run `go test ./...` in the root directory and make sure that your changes did not break any tests. While we don't require 100% code coverage for tests, we expect tests to cover all functionality and common edge cases/exceptions. If you're fixing a backend bug, add a test to ensure that bug doesn't come up again. 
 
 We do not currently have a process for frontend testing -- if building out a frontend testing process is something you'd like to work on, don't hesitate to reach out as this is something we'll introduce soon. 
 
 ## Making the PR
 
-To ensure that your PR is merged before an upcoming release, it is easiest if you prefix the branch with the release version you'd like to be finished by (the upcoming two releases will always exist at https://github.com/porter-dev/porter/projects). If your pull request is related to an issue, please mention that issue in the branch name. So for example, if I'd like to close issue `200` and I'd like to merge the PR by release `0.3.0`, I would run `git checkout -b 0.3.0-200-pod-deletion`. 
+To ensure that your PR is merged before an upcoming release, it is easiest if you prefix the branch with the release version you'd like to be finished by (the upcoming two releases will always exist at https://github.com/karagatandev/porter/projects). If your pull request is related to an issue, please mention that issue in the branch name. So for example, if I'd like to close issue `200` and I'd like to merge the PR by release `0.3.0`, I would run `git checkout -b 0.3.0-200-pod-deletion`. 
 
 For now, request [**@abelanger5**](https://github.com/abelanger5) to review your PR. 

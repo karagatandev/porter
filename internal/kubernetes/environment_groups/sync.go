@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/porter-dev/porter/internal/kubernetes"
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/internal/telemetry"
 )
 
 // SyncLatestVersionToNamespaceInput contains all information required to sync an environment group from the porter-env-group namespace

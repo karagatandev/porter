@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/porter-dev/porter/internal/helm/upgrade"
+	"github.com/karagatandev/porter/internal/helm/upgrade"
 	"github.com/stefanmcshane/helm/pkg/chart"
 )
 

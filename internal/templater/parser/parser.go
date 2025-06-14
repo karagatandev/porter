@@ -4,20 +4,20 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/helm"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/templater"
-	"github.com/porter-dev/porter/internal/templater/infra"
-	"github.com/porter-dev/porter/internal/templater/utils"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/helm"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/templater"
+	"github.com/karagatandev/porter/internal/templater/infra"
+	"github.com/karagatandev/porter/internal/templater/utils"
 	"github.com/stefanmcshane/helm/pkg/chart"
 	"github.com/stefanmcshane/helm/pkg/release"
 	"k8s.io/client-go/dynamic"
 	"sigs.k8s.io/yaml"
 
-	td "github.com/porter-dev/porter/internal/templater/dynamic"
-	tm "github.com/porter-dev/porter/internal/templater/helm/manifests"
-	tv "github.com/porter-dev/porter/internal/templater/helm/values"
+	td "github.com/karagatandev/porter/internal/templater/dynamic"
+	tm "github.com/karagatandev/porter/internal/templater/helm/manifests"
+	tv "github.com/karagatandev/porter/internal/templater/helm/values"
 )
 
 // ClientConfigDefault is a set of default clients to be used if a context in

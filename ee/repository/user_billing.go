@@ -3,7 +3,7 @@
 
 package repository
 
-import "github.com/porter-dev/porter/ee/models"
+import "github.com/karagatandev/porter/ee/models"
 
 type UserBillingRepository interface {
 	CreateUserBilling(userBilling *models.UserBilling) (*models.UserBilling, error)

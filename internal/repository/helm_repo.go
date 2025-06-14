@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/porter-dev/porter/internal/models"
-	ints "github.com/porter-dev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/internal/models"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
 )
 
 // HelmRepoRepository represents the set of queries on the HelmRepo model

@@ -7,16 +7,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 
 	"github.com/aws/aws-sdk-go/service/ecr"
 	"github.com/fatih/color"
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/cli/cmd/utils"
-	"github.com/porter-dev/porter/internal/models/integrations"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/cli/cmd/utils"
+	"github.com/karagatandev/porter/internal/models/integrations"
 
-	"github.com/porter-dev/porter/cli/cmd/providers/aws"
-	awsLocal "github.com/porter-dev/porter/cli/cmd/providers/aws/local"
+	"github.com/karagatandev/porter/cli/cmd/providers/aws"
+	awsLocal "github.com/karagatandev/porter/cli/cmd/providers/aws/local"
 )
 
 // ECR creates an ECR integration

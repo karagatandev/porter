@@ -8,12 +8,12 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/cli/cmd/pack"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/cli/cmd/pack"
 
-	"github.com/porter-dev/porter/cli/cmd/docker"
+	"github.com/karagatandev/porter/cli/cmd/docker"
 
-	api "github.com/porter-dev/porter/api/client"
+	api "github.com/karagatandev/porter/api/client"
 )
 
 const (

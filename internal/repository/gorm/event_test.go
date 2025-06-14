@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/go-test/deep"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/encryption"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/encryption"
+	"github.com/karagatandev/porter/internal/models"
 	"gorm.io/gorm"
 )
 

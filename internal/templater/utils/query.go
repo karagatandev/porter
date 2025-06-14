@@ -2,7 +2,7 @@ package utils
 
 import (
 	"github.com/itchyny/gojq"
-	"github.com/porter-dev/porter/internal/templater"
+	"github.com/karagatandev/porter/internal/templater"
 )
 
 // NewQuery constructs a templater.TemplateReaderQuery by parsing the jsonpath

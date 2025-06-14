@@ -29,7 +29,7 @@ And then run the command:
 porter create web --app web-test --values ./values.yaml
 ```
 
-Go to the [common configuration options](#common-configuration-options) section to view `values.yaml` files for common use-cases. You can also view all possible configuration options in the `values.yaml` files of the respective applications: [`web`](https://github.com/porter-dev/porter-charts/blob/master/applications/web/values.yaml), [`worker`](https://github.com/porter-dev/porter-charts/blob/master/applications/worker/values.yaml), and [`job`](https://github.com/porter-dev/porter-charts/blob/master/applications/job/values.yaml).
+Go to the [common configuration options](#common-configuration-options) section to view `values.yaml` files for common use-cases. You can also view all possible configuration options in the `values.yaml` files of the respective applications: [`web`](https://github.com/karagatandev/porter-charts/blob/master/applications/web/values.yaml), [`worker`](https://github.com/karagatandev/porter-charts/blob/master/applications/worker/values.yaml), and [`job`](https://github.com/karagatandev/porter-charts/blob/master/applications/job/values.yaml).
 
 ## Deploying from Local Files 
 
@@ -96,7 +96,7 @@ Would only update the container port to `8080`, while keeping your existing conf
 porter update --app --values ./values.yaml
 ```
 
-Go to the [common configuration options](#common-configuration-options) section to view `values.yaml` files for common use-cases. You can also view all possible configuration options in the `values.yaml` files of the respective applications: [`web`](https://github.com/porter-dev/porter-charts/blob/master/applications/web/values.yaml), [`worker`](https://github.com/porter-dev/porter-charts/blob/master/applications/worker/values.yaml), and [`job`](https://github.com/porter-dev/porter-charts/blob/master/applications/job/values.yaml).
+Go to the [common configuration options](#common-configuration-options) section to view `values.yaml` files for common use-cases. You can also view all possible configuration options in the `values.yaml` files of the respective applications: [`web`](https://github.com/karagatandev/porter-charts/blob/master/applications/web/values.yaml), [`worker`](https://github.com/karagatandev/porter-charts/blob/master/applications/worker/values.yaml), and [`job`](https://github.com/karagatandev/porter-charts/blob/master/applications/job/values.yaml).
 
 ## Building from Local Files 
 

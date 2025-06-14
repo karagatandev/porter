@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/types"
 	"github.com/stefanmcshane/helm/pkg/release"
 	"gorm.io/gorm"
 )

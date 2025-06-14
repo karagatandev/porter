@@ -4,11 +4,11 @@ import (
 	"fmt"
 
 	"github.com/go-chi/chi/v5"
-	v1EnvGroup "github.com/porter-dev/porter/api/server/handlers/v1/env_group"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/server/shared/router"
-	"github.com/porter-dev/porter/api/types"
+	v1EnvGroup "github.com/karagatandev/porter/api/server/handlers/v1/env_group"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/server/shared/router"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // swagger:parameters getEnvGroup

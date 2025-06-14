@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/fatih/color"
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/cli/cmd/config"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/cli/cmd/config"
 )
 
 // AppLogsInput is the input for the AppLogs function

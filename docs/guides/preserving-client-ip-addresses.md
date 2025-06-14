@@ -6,7 +6,7 @@
 
 > 🚧
 > 
-> Changing this configuration may result in a few minutes of downtime. It is recommended to set up client IP addresses before the application is live, or update it during a maintenance window. For more information, see [this Github issue](https://github.com/porter-dev/porter/issues/632#issuecomment-832939982).
+> Changing this configuration may result in a few minutes of downtime. It is recommended to set up client IP addresses before the application is live, or update it during a maintenance window. For more information, see [this Github issue](https://github.com/karagatandev/porter/issues/632#issuecomment-832939982).
  
 You will need to update your NGINX config to support proxying external IP addresses to Porter.
 

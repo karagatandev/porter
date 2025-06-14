@@ -3,7 +3,7 @@ package dynamic
 import (
 	"context"
 
-	"github.com/porter-dev/porter/internal/templater/utils"
+	"github.com/karagatandev/porter/internal/templater/utils"
 
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"k8s.io/apimachinery/pkg/runtime/schema"

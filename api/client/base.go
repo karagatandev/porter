@@ -3,7 +3,7 @@ package client
 import (
 	"context"
 
-	sharedConfig "github.com/porter-dev/porter/api/server/shared/config"
+	sharedConfig "github.com/karagatandev/porter/api/server/shared/config"
 )
 
 func (c *Client) GetPorterInstanceMetadata(ctx context.Context) (*sharedConfig.Metadata, error) {

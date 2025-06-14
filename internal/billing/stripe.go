@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/telemetry"
 	"github.com/stripe/stripe-go/v76"
 	"github.com/stripe/stripe-go/v76/customer"
 	"github.com/stripe/stripe-go/v76/paymentmethod"

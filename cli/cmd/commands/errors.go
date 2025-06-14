@@ -8,10 +8,10 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/cli/cmd/config"
-	cliErrors "github.com/porter-dev/porter/cli/cmd/errors"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/cli/cmd/config"
+	cliErrors "github.com/karagatandev/porter/cli/cmd/errors"
 	"github.com/spf13/cobra"
 )
 

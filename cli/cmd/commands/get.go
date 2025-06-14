@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/porter-dev/porter/cli/cmd/config"
-	v2 "github.com/porter-dev/porter/cli/cmd/v2"
+	"github.com/karagatandev/porter/cli/cmd/config"
+	v2 "github.com/karagatandev/porter/cli/cmd/v2"
 
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/types"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/types"
 	"github.com/spf13/cobra"
 	"github.com/stefanmcshane/helm/pkg/time"
 	"gopkg.in/yaml.v2"

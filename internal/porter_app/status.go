@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/porter-dev/porter/internal/deployment_target"
-	"github.com/porter-dev/porter/internal/kubernetes"
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/deployment_target"
+	"github.com/karagatandev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/internal/telemetry"
 	v1 "k8s.io/api/core/v1"
 )
 

@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/repository"
 )
 
 // DatastoreRepository is a test repository that implements repository.DatastoreRepository

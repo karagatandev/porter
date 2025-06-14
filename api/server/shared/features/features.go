@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/porter-dev/porter/api/server/handlers/cluster"
-	"github.com/porter-dev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/api/server/handlers/cluster"
+	"github.com/karagatandev/porter/internal/kubernetes"
 )
 
 // isPorterAgentUpdated checks if the agent version is at least the version specified by the major, minor, and patch arguments

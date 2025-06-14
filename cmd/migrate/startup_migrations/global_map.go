@@ -1,9 +1,9 @@
 package startup_migrations
 
 import (
-	"github.com/porter-dev/porter/cmd/migrate/enable_cluster_preview_envs"
-	"github.com/porter-dev/porter/internal/features"
-	lr "github.com/porter-dev/porter/pkg/logger"
+	"github.com/karagatandev/porter/cmd/migrate/enable_cluster_preview_envs"
+	"github.com/karagatandev/porter/internal/features"
+	lr "github.com/karagatandev/porter/pkg/logger"
 	"gorm.io/gorm"
 )
 

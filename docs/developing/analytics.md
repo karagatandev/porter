@@ -2,7 +2,7 @@
 
 ## Package Overview
 
-The [analytics package](https://github.com/porter-dev/porter/tree/master/internal/analytics) is currently dependent on Segment, so to use it you need to add your segment key via an environment variables `SEGMENT_CLIENT_KEY` in the `docker/.env` file. See [this link](https://segment.com/docs/connections/find-writekey/) for information on how to retrieve your key.
+The [analytics package](https://github.com/karagatandev/porter/tree/master/internal/analytics) is currently dependent on Segment, so to use it you need to add your segment key via an environment variables `SEGMENT_CLIENT_KEY` in the `docker/.env` file. See [this link](https://segment.com/docs/connections/find-writekey/) for information on how to retrieve your key.
 
 This package is divided in five files:
 

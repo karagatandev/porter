@@ -3,8 +3,8 @@ package stacks
 import (
 	"fmt"
 
-	"github.com/porter-dev/porter/internal/encryption"
-	"github.com/porter-dev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/encryption"
+	"github.com/karagatandev/porter/internal/models"
 )
 
 func CloneSourceConfigs(sourceConfigs []models.StackSourceConfig) ([]models.StackSourceConfig, error) {

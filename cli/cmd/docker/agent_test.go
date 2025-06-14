@@ -3,7 +3,7 @@ package docker_test
 // import (
 // 	"testing"
 
-// 	"github.com/porter-dev/porter/cli/cmd/docker"
+// 	"github.com/karagatandev/porter/cli/cmd/docker"
 // )
 
 // func TestGetServerURL(t *testing.T) {

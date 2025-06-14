@@ -6,9 +6,9 @@ import (
 
 	"github.com/stefanmcshane/helm/pkg/storage/driver"
 
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/internal/helm"
-	"github.com/porter-dev/porter/pkg/logger"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/internal/helm"
+	"github.com/karagatandev/porter/pkg/logger"
 
 	"github.com/stefanmcshane/helm/pkg/chart"
 	"github.com/stefanmcshane/helm/pkg/release"

@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	ptypes "github.com/porter-dev/porter/provisioner/types"
+	ptypes "github.com/karagatandev/porter/provisioner/types"
 )
 
 // ReportError reports a provisioning error to the provisioner service

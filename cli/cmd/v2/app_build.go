@@ -8,9 +8,9 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/cli/cmd/config"
-	v2 "github.com/porter-dev/porter/internal/porter_app/v2"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/cli/cmd/config"
+	v2 "github.com/karagatandev/porter/internal/porter_app/v2"
 )
 
 // AppBuildInput is the input to the AppBuild function

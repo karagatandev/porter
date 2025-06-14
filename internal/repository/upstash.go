@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	ints "github.com/porter-dev/porter/internal/models/integrations"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
 )
 
 // UpstashIntegrationRepository represents the set of queries on an Upstash integration

@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/porter-dev/porter/internal/models/integrations"
-	"github.com/porter-dev/porter/internal/repository/credentials"
+	"github.com/karagatandev/porter/internal/models/integrations"
+	"github.com/karagatandev/porter/internal/repository/credentials"
 )
 
 // Client contains an API client for IronPlans

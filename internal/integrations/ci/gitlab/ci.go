@@ -6,10 +6,10 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/porter-dev/porter/api/server/shared/commonutils"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/internal/oauth"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/api/server/shared/commonutils"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/internal/oauth"
+	"github.com/karagatandev/porter/internal/repository"
 	"github.com/xanzy/go-gitlab"
 	"gopkg.in/yaml.v2"
 )

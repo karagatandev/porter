@@ -7,7 +7,7 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/getsentry/sentry-go"
-	"github.com/porter-dev/porter/cli/cmd/config"
+	"github.com/karagatandev/porter/cli/cmd/config"
 )
 
 // SentryDSN is a global value for sentry's dsn. This should be removed

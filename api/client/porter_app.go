@@ -8,12 +8,12 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/porter-dev/porter/api/server/handlers/porter_app"
-	"github.com/porter-dev/porter/internal/models"
-	appInternal "github.com/porter-dev/porter/internal/porter_app"
-	v2 "github.com/porter-dev/porter/internal/porter_app/v2"
+	"github.com/karagatandev/porter/api/server/handlers/porter_app"
+	"github.com/karagatandev/porter/internal/models"
+	appInternal "github.com/karagatandev/porter/internal/porter_app"
+	v2 "github.com/karagatandev/porter/internal/porter_app/v2"
 
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 )
 
 func (c *Client) NewGetPorterApp(

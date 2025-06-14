@@ -3,8 +3,8 @@ package commands
 import (
 	"fmt"
 
-	"github.com/porter-dev/porter/cli/cmd/config"
-	"github.com/porter-dev/porter/cli/cmd/utils"
+	"github.com/karagatandev/porter/cli/cmd/config"
+	"github.com/karagatandev/porter/cli/cmd/utils"
 	"github.com/spf13/cobra"
 )
 
@@ -19,7 +19,7 @@ func RegisterCommands() (*cobra.Command, error) {
 	rootCmd := &cobra.Command{
 		Use:   "porter",
 		Short: "Porter is a dashboard for managing Kubernetes clusters.",
-		Long:  `Porter is a tool for creating, versioning, and updating Kubernetes deployments using a visual dashboard. For more information, visit github.com/porter-dev/porter`,
+		Long:  `Porter is a tool for creating, versioning, and updating Kubernetes deployments using a visual dashboard. For more information, visit github.com/karagatandev/porter`,
 	}
 	rootCmd.PersistentFlags().AddFlagSet(utils.DefaultFlagSet)
 

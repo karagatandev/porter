@@ -3,7 +3,7 @@ package aws
 import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/iam"
-	"github.com/porter-dev/porter/cli/cmd/utils"
+	"github.com/karagatandev/porter/cli/cmd/utils"
 	"k8s.io/client-go/kubernetes"
 )
 

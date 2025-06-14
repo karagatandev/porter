@@ -3,10 +3,10 @@ package keyrotate_test
 import (
 	"testing"
 
-	"github.com/porter-dev/porter/cmd/migrate/keyrotate"
-	"github.com/porter-dev/porter/internal/models"
-	ints "github.com/porter-dev/porter/internal/models/integrations"
-	gorm "github.com/porter-dev/porter/internal/repository/gorm"
+	"github.com/karagatandev/porter/cmd/migrate/keyrotate"
+	"github.com/karagatandev/porter/internal/models"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
+	gorm "github.com/karagatandev/porter/internal/repository/gorm"
 )
 
 func TestClusterModelRotation(t *testing.T) {

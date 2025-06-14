@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/porter-dev/porter/api/server/handlers"
-	"github.com/porter-dev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/server/handlers"
+	"github.com/karagatandev/porter/api/server/shared/config"
 )
 
 type GithubAppInstallHandler struct {

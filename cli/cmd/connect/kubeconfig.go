@@ -10,13 +10,13 @@ import (
 	"strings"
 
 	"github.com/fatih/color"
-	awsLocal "github.com/porter-dev/porter/cli/cmd/providers/aws/local"
-	gcpLocal "github.com/porter-dev/porter/cli/cmd/providers/gcp/local"
-	"github.com/porter-dev/porter/cli/cmd/utils"
-	"github.com/porter-dev/porter/internal/kubernetes/local"
+	awsLocal "github.com/karagatandev/porter/cli/cmd/providers/aws/local"
+	gcpLocal "github.com/karagatandev/porter/cli/cmd/providers/gcp/local"
+	"github.com/karagatandev/porter/cli/cmd/utils"
+	"github.com/karagatandev/porter/internal/kubernetes/local"
 
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/types"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // Kubeconfig creates a service account for a project by parsing the local

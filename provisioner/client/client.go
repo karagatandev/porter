@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/gorilla/schema"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/provisioner/pb"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/provisioner/pb"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"

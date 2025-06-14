@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/porter-dev/porter/cli/cmd/utils"
+	"github.com/karagatandev/porter/cli/cmd/utils"
 )
 
 func redirect(

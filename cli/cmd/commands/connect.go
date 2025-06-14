@@ -4,10 +4,10 @@ import (
 	"context"
 	"os"
 
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/cli/cmd/config"
-	"github.com/porter-dev/porter/cli/cmd/connect"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/cli/cmd/config"
+	"github.com/karagatandev/porter/cli/cmd/connect"
 	"github.com/spf13/cobra"
 )
 

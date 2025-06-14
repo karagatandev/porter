@@ -17,13 +17,13 @@ import (
 
 	goerrors "errors"
 
-	"github.com/porter-dev/porter/api/server/shared/websocket"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/registry"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/api/server/shared/websocket"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/registry"
+	"github.com/karagatandev/porter/internal/repository"
 	"golang.org/x/oauth2"
 
-	"github.com/porter-dev/porter/internal/helm/grapher"
+	"github.com/karagatandev/porter/internal/helm/grapher"
 	appsv1 "k8s.io/api/apps/v1"
 	batchv1 "k8s.io/api/batch/v1"
 	v1 "k8s.io/api/core/v1"

@@ -16,7 +16,7 @@ import (
 
 	"github.com/gorilla/schema"
 	"github.com/gorilla/websocket"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // Client represents the client for the Porter API

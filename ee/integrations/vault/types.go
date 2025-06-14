@@ -1,6 +1,6 @@
 package vault
 
-import "github.com/porter-dev/porter/internal/repository/credentials"
+import "github.com/karagatandev/porter/internal/repository/credentials"
 
 type CreateVaultSecretRequest struct {
 	Data interface{} `json:"data"`

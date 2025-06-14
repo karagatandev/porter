@@ -5,8 +5,8 @@ package loader
 
 import (
 	// TODO: delete once the billing code is cleaned up
-	// eeBilling "github.com/porter-dev/porter/ee/billing"
-	"github.com/porter-dev/porter/ee/models"
+	// eeBilling "github.com/karagatandev/porter/ee/billing"
+	"github.com/karagatandev/porter/ee/models"
 )
 
 func init() {

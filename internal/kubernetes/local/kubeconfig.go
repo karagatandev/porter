@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/porter-dev/porter/internal/kubernetes"
+	"github.com/karagatandev/porter/internal/kubernetes"
 
 	k8s "k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/clientcmd"

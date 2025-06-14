@@ -3,7 +3,7 @@ package models
 import (
 	"gorm.io/gorm"
 
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/types"
 )
 
 // PorterApp (stack) type that extends gorm.Model

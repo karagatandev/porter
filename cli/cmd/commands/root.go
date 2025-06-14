@@ -11,7 +11,7 @@ import (
 	"github.com/Masterminds/semver/v3"
 	"github.com/fatih/color"
 	"github.com/google/go-github/v41/github"
-	cfg "github.com/porter-dev/porter/cli/cmd/config"
+	cfg "github.com/karagatandev/porter/cli/cmd/config"
 	"k8s.io/client-go/util/homedir"
 )
 

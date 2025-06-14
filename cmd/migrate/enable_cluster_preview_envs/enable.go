@@ -1,9 +1,9 @@
 package enable_cluster_preview_envs
 
 import (
-	"github.com/porter-dev/porter/internal/features"
-	"github.com/porter-dev/porter/internal/models"
-	lr "github.com/porter-dev/porter/pkg/logger"
+	"github.com/karagatandev/porter/internal/features"
+	"github.com/karagatandev/porter/internal/models"
+	lr "github.com/karagatandev/porter/pkg/logger"
 	_gorm "gorm.io/gorm"
 )
 

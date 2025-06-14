@@ -3,8 +3,8 @@ package policy_test
 import (
 	"testing"
 
-	"github.com/porter-dev/porter/api/server/authz/policy"
-	"github.com/porter-dev/porter/api/types"
+	"github.com/karagatandev/porter/api/server/authz/policy"
+	"github.com/karagatandev/porter/api/types"
 	"github.com/stretchr/testify/assert"
 )
 

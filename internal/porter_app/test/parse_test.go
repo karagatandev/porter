@@ -9,8 +9,8 @@ import (
 	"google.golang.org/protobuf/encoding/protojson"
 	"k8s.io/utils/pointer"
 
+	"github.com/karagatandev/porter/internal/porter_app"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
-	"github.com/porter-dev/porter/internal/porter_app"
 	"github.com/sergi/go-diff/diffmatchpatch"
 
 	"github.com/matryer/is"

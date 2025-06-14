@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	api "github.com/porter-dev/porter/api/client"
-	"github.com/porter-dev/porter/api/types"
-	"github.com/porter-dev/porter/cli/cmd/docker"
-	"github.com/porter-dev/porter/cli/cmd/pack"
+	api "github.com/karagatandev/porter/api/client"
+	"github.com/karagatandev/porter/api/types"
+	"github.com/karagatandev/porter/cli/cmd/docker"
+	"github.com/karagatandev/porter/cli/cmd/pack"
 )
 
 // BuildAgent builds a new Docker container image for a new version of an application

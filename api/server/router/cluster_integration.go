@@ -2,11 +2,11 @@ package router
 
 import (
 	"github.com/go-chi/chi/v5"
-	awsClusterInt "github.com/porter-dev/porter/api/server/handlers/cluster_integration/aws"
-	"github.com/porter-dev/porter/api/server/shared"
-	"github.com/porter-dev/porter/api/server/shared/config"
-	"github.com/porter-dev/porter/api/server/shared/router"
-	"github.com/porter-dev/porter/api/types"
+	awsClusterInt "github.com/karagatandev/porter/api/server/handlers/cluster_integration/aws"
+	"github.com/karagatandev/porter/api/server/shared"
+	"github.com/karagatandev/porter/api/server/shared/config"
+	"github.com/karagatandev/porter/api/server/shared/router"
+	"github.com/karagatandev/porter/api/types"
 )
 
 func NewClusterIntegrationScopedRegisterer(children ...*router.Registerer) *router.Registerer {

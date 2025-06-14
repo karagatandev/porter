@@ -25,7 +25,7 @@ To re-run the job, simply click the "Rerun job" button in the bottom right corne
 
 When you set up a one-time job to deploy from a Github repository, the job will **not** run automatically -- the Github action will simply update the image used to run the job. 
 
-To get the Github action to run the job automatically, you can use [this Github action](https://github.com/porter-dev/porter-run-job-action). For example:
+To get the Github action to run the job automatically, you can use [this Github action](https://github.com/karagatandev/porter-run-job-action). For example:
 
 ```yaml
 # ... the rest of your Github action

@@ -10,14 +10,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/porter-dev/porter/internal/telemetry"
+	"github.com/karagatandev/porter/internal/telemetry"
 
 	"connectrpc.com/connect"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/oauth"
+	"github.com/karagatandev/porter/internal/repository"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 	"github.com/porter-dev/api-contracts/generated/go/porter/v1/porterv1connect"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/oauth"
-	"github.com/porter-dev/porter/internal/repository"
 	"golang.org/x/oauth2"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime"
@@ -33,7 +33,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd/api"
 	"k8s.io/client-go/util/homedir"
 
-	ints "github.com/porter-dev/porter/internal/models/integrations"
+	ints "github.com/karagatandev/porter/internal/models/integrations"
 
 	// this line will register plugins
 	_ "k8s.io/client-go/plugin/pkg/client/auth"

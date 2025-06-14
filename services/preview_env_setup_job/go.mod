@@ -1,10 +1,10 @@
-module github.com/porter-dev/porter/services/preview_env_setup_job
+module github.com/karagatandev/porter/services/preview_env_setup_job
 
 go 1.19
 
 require (
 	github.com/joeshaw/envdecode v0.0.0-20200121155833-099f1fc765bd
-	github.com/porter-dev/porter v0.45.4
+	github.com/karagatandev/porter v0.45.4
 	golang.org/x/crypto v0.6.0
 )
 

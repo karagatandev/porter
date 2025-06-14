@@ -1,6 +1,6 @@
 package credentials
 
-import "github.com/porter-dev/porter/internal/models/integrations"
+import "github.com/karagatandev/porter/internal/models/integrations"
 
 type OAuthCredential struct {
 	// The ID issued to the client

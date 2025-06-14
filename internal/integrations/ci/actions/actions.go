@@ -11,9 +11,9 @@ import (
 	"github.com/Masterminds/semver/v3"
 	ghinstallation "github.com/bradleyfalzon/ghinstallation/v2"
 	"github.com/google/go-github/v41/github"
-	"github.com/porter-dev/porter/internal/models"
-	"github.com/porter-dev/porter/internal/oauth"
-	"github.com/porter-dev/porter/internal/repository"
+	"github.com/karagatandev/porter/internal/models"
+	"github.com/karagatandev/porter/internal/oauth"
+	"github.com/karagatandev/porter/internal/repository"
 	"golang.org/x/crypto/nacl/box"
 	"golang.org/x/oauth2"
 
