@@ -13,6 +13,7 @@ import (
 	"github.com/karagatandev/porter/api/types"
 	"github.com/karagatandev/porter/internal/models"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 )
 
@@ -84,6 +85,11 @@ func (c *RollbackAppRevisionHandler) ServeHTTP(w http.ResponseWriter, r *http.Re
 	if app.ID == 0 {
 		err = telemetry.Error(ctx, span, nil, "app with name does not exist in project")
 		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(err, http.StatusBadRequest))
+		return
+	}
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
 		return
 	}
 

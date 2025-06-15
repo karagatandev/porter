@@ -17,6 +17,7 @@ import (
 	"github.com/karagatandev/porter/internal/models"
 	"github.com/karagatandev/porter/internal/porter_app"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 )
 
 // AppLogsHandler handles the /apps/logs endpoint
@@ -100,6 +101,11 @@ func (c *AppLogsHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	telemetry.WithAttributes(span, telemetry.AttributeKV{Key: "service-name", Value: request.ServiceName})
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
 
 	deploymentTargetName := request.DeploymentTargetName
 	if request.DeploymentTargetName == "" && request.DeploymentTargetID == "" {

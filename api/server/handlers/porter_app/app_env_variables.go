@@ -1,6 +1,7 @@
 package porter_app
 
 import (
+	"errors"
 	"net/http"
 
 	"connectrpc.com/connect"
@@ -95,6 +96,11 @@ func (c *AppEnvVariablesHandler) ServeHTTP(w http.ResponseWriter, r *http.Reques
 		DeploymentTargetIdentifier: deploymentTargetIdentifer,
 	})
 
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
+	
 	ccpResp, err := c.Config().ClusterControlPlaneClient.AppEnvVariables(ctx, appEnvVariablesReq)
 	if err != nil {
 		err := telemetry.Error(ctx, span, err, "error getting app env variables from ccp")

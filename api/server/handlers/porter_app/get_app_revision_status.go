@@ -14,6 +14,7 @@ import (
 	"github.com/karagatandev/porter/internal/models"
 	"github.com/karagatandev/porter/internal/porter_app"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 )
 
@@ -72,6 +73,12 @@ func (c *GetAppRevisionStatusHandler) ServeHTTP(w http.ResponseWriter, r *http.R
 		ProjectId:     int64(project.ID),
 		AppRevisionId: appRevisionID,
 	})
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
+
 	ccpResp, err := c.Config().ClusterControlPlaneClient.AppRevisionStatus(ctx, getRevisionStatusReq)
 	if err != nil {
 		err = telemetry.Error(ctx, span, err, "error getting app revision status")

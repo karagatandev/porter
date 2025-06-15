@@ -149,6 +149,11 @@ func (c *CreateAppHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 			PorterAppId: int64(porterApp.ID),
 		})
 
+		if c.Config().ClusterControlPlaneClient == nil {
+			c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+			return
+		}
+
 		createAppInstanceResp, err := c.Config().ClusterControlPlaneClient.CreateAppInstance(ctx, createAppInstanceReq)
 		if err != nil {
 			// ignore error until app instances are fully supported: POR-2056

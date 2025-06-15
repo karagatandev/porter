@@ -1,6 +1,7 @@
 package client
 
 import (
+	"bytes"
 	"context"
 	"encoding/base64"
 	"encoding/json"
@@ -390,7 +391,10 @@ func (c *Client) sendRequest(req *http.Request, v interface{}, useCookie bool) (
 	}
 
 	if v != nil {
-		if err = json.NewDecoder(res.Body).Decode(v); err != nil {
+		content, _ := ioutil.ReadAll(res.Body)
+		println(string(content))
+
+		if err = json.NewDecoder(bytes.NewReader(content)).Decode(v); err != nil {
 			return nil, err
 		}
 	}

@@ -13,6 +13,7 @@ import (
 	"github.com/karagatandev/porter/api/types"
 	"github.com/karagatandev/porter/internal/models"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 )
 
@@ -59,6 +60,12 @@ func (c *DeletePorterAppByNameHandler) ServeHTTP(w http.ResponseWriter, r *http.
 		ClusterId: int64(cluster.ID),
 		AppName:   appName,
 	})
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
+
 	ccpResp, err := c.Config().ClusterControlPlaneClient.DeletePorterApp(r.Context(), deleteReq)
 	if err != nil {
 		err := telemetry.Error(ctx, span, err, "error deleting porter app")

@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	"github.com/karagatandev/porter/internal/kubernetes"
+	"github.com/pkg/errors"
 
 	"github.com/google/uuid"
 	"github.com/karagatandev/porter/internal/deployment_target"
@@ -90,6 +91,12 @@ func (c *PorterYAMLFromRevisionHandler) ServeHTTP(w http.ResponseWriter, r *http
 		ProjectId:     int64(project.ID),
 		AppRevisionId: appRevisionID,
 	})
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
+	
 	ccpResp, err := c.Config().ClusterControlPlaneClient.GetAppRevision(ctx, getRevisionReq)
 	if err != nil {
 		err = telemetry.Error(ctx, span, err, "error getting app revision")

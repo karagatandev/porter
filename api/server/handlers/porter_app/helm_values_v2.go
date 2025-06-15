@@ -6,6 +6,7 @@ import (
 
 	"github.com/karagatandev/porter/api/server/authz"
 	"github.com/karagatandev/porter/api/server/shared/requestutils"
+	"github.com/pkg/errors"
 
 	"connectrpc.com/connect"
 
@@ -105,6 +106,11 @@ func (c *AppHelmValuesHandler) ServeHTTP(w http.ResponseWriter, r *http.Request)
 		WithDefaults:       request.WithDefaults,
 		AppName:            appName,
 	})
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
 
 	helmValuesResp, err := c.Config().ClusterControlPlaneClient.AppHelmValues(ctx, helmValuesReq)
 	if err != nil {

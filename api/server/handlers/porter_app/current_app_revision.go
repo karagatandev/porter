@@ -5,6 +5,7 @@ import (
 
 	"github.com/karagatandev/porter/api/server/authz"
 	"github.com/karagatandev/porter/api/server/shared/requestutils"
+	"github.com/pkg/errors"
 
 	"connectrpc.com/connect"
 
@@ -108,6 +109,11 @@ func (c *LatestAppRevisionHandler) ServeHTTP(w http.ResponseWriter, r *http.Requ
 		},
 		AppName: appName,
 	})
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
 
 	currentAppRevisionResp, err := c.Config().ClusterControlPlaneClient.CurrentAppRevision(ctx, currentAppRevisionReq)
 	if err != nil {

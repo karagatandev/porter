@@ -79,3 +79,5 @@ terraform.rc
 tmp
 
 tsconfig.json
+
+cmd/migrate/migrate

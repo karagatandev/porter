@@ -13,6 +13,7 @@ import (
 	"github.com/karagatandev/porter/api/types"
 	"github.com/karagatandev/porter/internal/models"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 )
 
@@ -81,6 +82,11 @@ func (c *UpdateImageHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		telemetry.AttributeKV{Key: "repository", Value: request.Repository},
 		telemetry.AttributeKV{Key: "tag", Value: request.Tag},
 	)
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
 
 	deploymentTargetName := request.DeploymentTargetName
 	if request.DeploymentTargetName == "" && request.DeploymentTargetID == "" {

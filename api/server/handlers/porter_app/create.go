@@ -105,6 +105,11 @@ func (c *CreatePorterAppHandler) ServeHTTP(w http.ResponseWriter, r *http.Reques
 			},
 		})
 
+		if c.Config().ClusterControlPlaneClient == nil {
+			c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+			return
+		}
+
 		appImageResp, err := c.Config().ClusterControlPlaneClient.UpdateAppImage(ctx, updateAppImageReq)
 		if err != nil {
 			err := telemetry.Error(ctx, span, err, "error updating app image")

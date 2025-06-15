@@ -1,7 +1,10 @@
 package porter_app
 
 import (
+	"errors"
+	"fmt"
 	"net/http"
+	"runtime/debug"
 
 	"connectrpc.com/connect"
 	"github.com/karagatandev/porter/api/server/handlers"
@@ -50,6 +53,13 @@ type LatestAppRevisionsResponse struct {
 }
 
 func (c *LatestAppRevisionsHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+
+	defer func() {
+		if r := recover(); r != nil {
+			fmt.Printf("PANIC_RECOVERED %v, %s", r, debug.Stack())
+		}
+	}()
+
 	ctx, span := telemetry.NewSpan(r.Context(), "serve-list-app-revisions")
 	defer span.End()
 
@@ -82,7 +92,13 @@ func (c *LatestAppRevisionsHandler) ServeHTTP(w http.ResponseWriter, r *http.Req
 		DeploymentTargetIdentifier: deploymentTargetIdentifier,
 	})
 
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
+
 	latestAppRevisionsResp, err := c.Config().ClusterControlPlaneClient.LatestAppRevisions(ctx, listAppRevisionsReq)
+
 	if err != nil {
 		err = telemetry.Error(ctx, span, err, "error getting latest app revisions")
 		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(err, http.StatusInternalServerError))

@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"connectrpc.com/connect"
+	"github.com/pkg/errors"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 
 	"github.com/karagatandev/porter/internal/telemetry"
@@ -76,6 +77,11 @@ func (c *PredeployStatusHandler) ServeHTTP(w http.ResponseWriter, r *http.Reques
 		telemetry.AttributeKV{Key: "app-name", Value: name},
 		telemetry.AttributeKV{Key: "app-revision-id", Value: appRevisionId},
 	)
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
 
 	predeployStatusReq := connect.NewRequest(&porterv1.PredeployStatusRequest{
 		ProjectId:     int64(project.ID),

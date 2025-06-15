@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/pkg/errors"
 	"github.com/porter-dev/api-contracts/generated/go/porter/v1/porterv1connect"
 
 	"github.com/google/uuid"
@@ -68,6 +69,11 @@ func (c *DefaultDeploymentTargetHandler) ServeHTTP(w http.ResponseWriter, r *htt
 		telemetry.AttributeKV{Key: "cluster-id", Value: cluster.ID},
 	)
 
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
+	
 	defaultDeploymentTarget, err := defaultDeploymentTarget(ctx, defaultDeploymentTargetInput{
 		ProjectID:                 project.ID,
 		ClusterID:                 cluster.ID,

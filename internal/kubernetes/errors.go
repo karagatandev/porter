@@ -7,17 +7,12 @@ import (
 	"os"
 	"syscall"
 
+	"github.com/pkg/errors"
 	k8sErrors "k8s.io/apimachinery/pkg/api/errors"
 )
 
-type ErrExternalized struct {
-	error
-	Message string `json:"message"`
-	Details string `json:"error"`
-}
-
 type K8sConnectionError interface {
-	Externalize() *ErrExternalized
+	Externalize() error
 	Error() string
 }
 
@@ -59,11 +54,8 @@ func (e *ErrUnknown) Error() string {
 	return fmt.Sprintf("Unknown or unhandled error: %s", e.k8sErr.Error())
 }
 
-func (e *ErrUnknown) Externalize() *ErrExternalized {
-	return &ErrExternalized{
-		Message: "Unknown or unhandled error",
-		Details: e.Error(),
-	}
+func (e *ErrUnknown) Externalize() error {
+	return errors.Errorf("Unknown or unhandled error: %v", e.k8sErr)
 }
 
 // For ECONNREFUSED and errors.IsTimeout
@@ -75,11 +67,8 @@ func (e *ErrConnection) Error() string {
 	return fmt.Sprintf("Could not connect to cluster: %s", e.k8sErr.Error())
 }
 
-func (e *ErrConnection) Externalize() *ErrExternalized {
-	return &ErrExternalized{
-		Message: "Could not connect to cluster",
-		Details: e.Error(),
-	}
+func (e *ErrConnection) Externalize() error {
+	return errors.Errorf("Could not connect to cluster: %v", e.k8sErr)
 }
 
 // For errors.IsForbidden and errors.IsUnauthorized
@@ -88,12 +77,9 @@ type ErrUnauthorized struct {
 }
 
 func (e *ErrUnauthorized) Error() string {
-	return fmt.Sprintf("Unauthorized: %s", e.k8sErr.Error())
+	return fmt.Sprintf("Unauthorized: %v", e.k8sErr)
 }
 
-func (e *ErrUnauthorized) Externalize() *ErrExternalized {
-	return &ErrExternalized{
-		Message: "Unauthorized",
-		Details: e.Error(),
-	}
+func (e *ErrUnauthorized) Externalize() error {
+	return errors.Errorf("Unauthorized: %v", e.k8sErr)
 }

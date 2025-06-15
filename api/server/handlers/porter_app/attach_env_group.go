@@ -12,6 +12,7 @@ import (
 	"github.com/karagatandev/porter/api/types"
 	"github.com/karagatandev/porter/internal/models"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 )
 
@@ -85,6 +86,11 @@ func (c *AttachEnvGroupHandler) ServeHTTP(w http.ResponseWriter, r *http.Request
 				},
 			},
 		})
+
+		if c.Config().ClusterControlPlaneClient == nil {
+			c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+			return
+		}
 
 		_, err = c.Config().ClusterControlPlaneClient.UpdateApp(ctx, updateReq)
 		if err != nil {

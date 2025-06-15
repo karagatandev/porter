@@ -18,6 +18,7 @@ import (
 	"github.com/karagatandev/porter/internal/porter_app"
 	v2 "github.com/karagatandev/porter/internal/porter_app/v2"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 	"github.com/porter-dev/api-contracts/generated/go/helpers"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 )
@@ -131,6 +132,11 @@ func (c *GetBuildFromRevisionHandler) ServeHTTP(w http.ResponseWriter, r *http.R
 		}
 	}
 
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
+
 	revision, err := porter_app.GetAppRevision(ctx, porter_app.GetAppRevisionInput{
 		AppRevisionID: appRevisionUuid,
 		ProjectID:     project.ID,
@@ -195,6 +201,11 @@ func (c *GetBuildFromRevisionHandler) ServeHTTP(w http.ResponseWriter, r *http.R
 	if err != nil {
 		err := telemetry.Error(ctx, span, err, "error getting agent")
 		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(err, http.StatusInternalServerError))
+		return
+	}
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
 		return
 	}
 

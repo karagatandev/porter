@@ -14,6 +14,7 @@ import (
 	"github.com/karagatandev/porter/internal/deployment_target"
 	"github.com/karagatandev/porter/internal/models"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 	v1 "k8s.io/api/core/v1"
 )
 
@@ -69,6 +70,11 @@ func (c *PodStatusHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		telemetry.AttributeKV{Key: "input-deployment-target-id", Value: request.DeploymentTargetID},
 		telemetry.AttributeKV{Key: "input-deployment-target-name", Value: request.DeploymentTargetName},
 	)
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
 
 	deploymentTargetName := request.DeploymentTargetName
 	if request.DeploymentTargetName == "" && request.DeploymentTargetID == "" {

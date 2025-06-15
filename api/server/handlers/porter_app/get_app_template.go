@@ -15,6 +15,7 @@ import (
 	"github.com/karagatandev/porter/internal/kubernetes/environment_groups"
 	"github.com/karagatandev/porter/internal/models"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 	"github.com/porter-dev/api-contracts/generated/go/helpers"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 )
@@ -85,6 +86,11 @@ func (c *GetAppTemplateHandler) ServeHTTP(w http.ResponseWriter, r *http.Request
 		AppId:     int64(app.ID),
 	})
 
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
+	
 	ccpResp, err := c.Config().ClusterControlPlaneClient.AppTemplate(ctx, templateReq)
 	if err != nil {
 		err := telemetry.Error(ctx, span, err, "error getting app template")

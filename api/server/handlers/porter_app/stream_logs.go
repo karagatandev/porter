@@ -8,6 +8,7 @@ import (
 
 	"github.com/karagatandev/porter/internal/deployment_target"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 
 	"github.com/karagatandev/porter/api/server/authz"
 	"github.com/karagatandev/porter/api/server/handlers"
@@ -67,6 +68,11 @@ func (c *StreamLogsLokiHandler) ServeHTTP(w http.ResponseWriter, r *http.Request
 		return
 	}
 	telemetry.WithAttributes(span, telemetry.AttributeKV{Key: "service-name", Value: request.ServiceName})
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
 
 	deploymentTargetName := request.DeploymentTargetName
 	if request.DeploymentTargetName == "" && request.DeploymentTargetID == "" {

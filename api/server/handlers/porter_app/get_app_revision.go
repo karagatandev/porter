@@ -15,6 +15,7 @@ import (
 	"github.com/karagatandev/porter/internal/models"
 	"github.com/karagatandev/porter/internal/porter_app"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 )
 
@@ -67,6 +68,12 @@ func (c *GetAppRevisionHandler) ServeHTTP(w http.ResponseWriter, r *http.Request
 		ProjectId:     int64(project.ID),
 		AppRevisionId: appRevisionID,
 	})
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
+
 	ccpResp, err := c.Config().ClusterControlPlaneClient.GetAppRevision(ctx, getRevisionReq)
 	if err != nil {
 		err = telemetry.Error(ctx, span, err, "error getting app revision")
@@ -84,6 +91,11 @@ func (c *GetAppRevisionHandler) ServeHTTP(w http.ResponseWriter, r *http.Request
 	if err != nil {
 		err := telemetry.Error(ctx, span, err, "error getting encoded revision from proto")
 		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(err, http.StatusInternalServerError))
+		return
+	}
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
 		return
 	}
 

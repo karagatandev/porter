@@ -5,6 +5,7 @@ import (
 
 	"github.com/karagatandev/porter/api/server/authz"
 	"github.com/karagatandev/porter/api/server/shared/requestutils"
+	"github.com/pkg/errors"
 
 	"connectrpc.com/connect"
 
@@ -87,6 +88,11 @@ func (c *RunAppJobHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	telemetry.WithAttributes(span, telemetry.AttributeKV{Key: "service-name", Value: request.ServiceName})
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
 
 	deploymentTargetName := request.DeploymentTargetName
 	if request.DeploymentTargetName == "" && request.DeploymentTargetID == "" {

@@ -16,6 +16,7 @@ import (
 	"github.com/karagatandev/porter/internal/porter_app"
 	v2 "github.com/karagatandev/porter/internal/porter_app/v2"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 	"github.com/porter-dev/api-contracts/generated/go/helpers"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 )
@@ -321,6 +322,11 @@ func (c *UpdateAppHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		IsPredeployEligible: request.WithPredeploy,
 		Exact:               request.Exact,
 	})
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
 
 	ccpResp, err := c.Config().ClusterControlPlaneClient.UpdateApp(ctx, updateReq)
 	if err != nil {

@@ -12,6 +12,7 @@ import (
 	"github.com/karagatandev/porter/internal/models"
 	"github.com/karagatandev/porter/internal/porter_app"
 	"github.com/karagatandev/porter/internal/telemetry"
+	"github.com/pkg/errors"
 	porterv1 "github.com/porter-dev/api-contracts/generated/go/porter/v1"
 )
 
@@ -73,6 +74,11 @@ func (c *AppInstancesHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) 
 		ProjectId:                  int64(project.ID),
 		DeploymentTargetIdentifier: deploymentTargetIdentifier,
 	})
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
 
 	latestAppInstancesResp, err := c.Config().ClusterControlPlaneClient.ListAppInstances(ctx, listAppInstancesReq)
 	if err != nil {

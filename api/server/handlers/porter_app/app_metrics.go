@@ -5,6 +5,7 @@ import (
 
 	"github.com/karagatandev/porter/internal/deployment_target"
 	"github.com/karagatandev/porter/internal/kubernetes/prometheus"
+	"github.com/pkg/errors"
 
 	"github.com/karagatandev/porter/internal/telemetry"
 
@@ -77,6 +78,11 @@ func (c *AppMetricsHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	telemetry.WithAttributes(span, telemetry.AttributeKV{Key: "deployment-target-id", Value: request.DeploymentTargetID})
+
+	if c.Config().ClusterControlPlaneClient == nil {
+		c.HandleAPIError(w, r, apierrors.NewErrPassThroughToClient(errors.New("empty ClusterControlPlaneClient"), http.StatusInternalServerError))
+		return
+	}
 
 	deploymentTarget, err := deployment_target.DeploymentTargetDetails(ctx, deployment_target.DeploymentTargetDetailsInput{
 		ProjectID:          int64(project.ID),
